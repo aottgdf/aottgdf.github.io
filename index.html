@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dragon'sFaMiLy</title>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=description content="Dragon'sFaMiLy GUILD">
+    <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#3399ff">
+    <meta name="msapplication-TileColor" content="#3399ff">
+    <meta name="msapplication-TileImage" content="./images/icons/mstile-150x150.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Dragon'sFaMiLy GUILD">
+    <meta name="application-name" content="Dragon'sFaMiLy GUILD">
+	<meta property="og:url" content="http://aottgdf.github.io/"/>
+	<meta property="og:type" content="game"/>
+	<meta property="og:title" content="Dragon'sFaMiLy GUILD"/>
+	<meta property="og:description" content="Dragon'sFaMiLy GUILD กิลด์ครอบครัวมังกร (ตระกูลแห่งมังกร)"/>
+	<meta property="og:image" content="http://aottgdf.github.io/intro.png"/>
+    <link rel="apple-touch-icon" href="./images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="./images/icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./images/icons/favicon-16x16.png" sizes="16x16">
+    <!--<link rel="manifest" href="./manifest.json">-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/guild.css">
+	<link rel="stylesheet" href="./css/font-awesome.css">
+	<link rel="stylesheet" href="./css/slide.css">
+  </head>
+  <body>
+	<video autoplay="true" id="bgvideo" loop="" class="" data-spark-video="true" src="./media/video.mp4" type="video/mp4">
+		<!--<<source src="./media/video.mp4" type="video/mp4">-->
+		<!--<source src="../../Video/Nightcore%20Epic%20Gaming%20Mix%20[NEFFEX].mp4" type="video/mp4">-->
+		<!--<source src="../../Video/Nihon%20Animator%20Mihonichi%20Me!%20Me!%20Me!.mp4" type="video/mp4">-->
+	</video>
+	<div class="app app__layout">
+		<header>
+		  <span class="header__icon">
+			<svg class="menu__icon no--select" width="24px" height="24px" viewBox="0 0 48 48" fill="#fff">
+			  <path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z"></path>
+			</svg>
+		  </span>
+
+		  <span class="header__title no--select">Dragon'sFaMiLy</span>
+			
+		</header>
+
+		<div class="menu">
+			<div class="profile">
+				<div class="row">
+					<a href="#profile">
+						<img id="myprofile" alt="Profile" class="avatar">
+					</a>
+				</div>
+				<div class="row">
+					<h1 class="brand"><a href="#" id="name">GUEST2018</a></h1>
+					<span class="tagline" id="guild">Dragon'sFaMiLy</span>
+				</div>
+			</div>
+				</br>
+			<ul class="nav nav-list">
+				<li id="home" class="active">
+					<a href="#"><i class="fa fa-home pull-left"></i> หน้าหลัก</a>
+				</li>
+				<li id="quest" class="">
+					<a href="#"><i class="fa fa-windows pull-left"></i> เควส</a>
+				</li>
+				<li id="shop" class="">
+					<a href="#"><i class="fa fa-shopping-bag pull-left"></i> ร้านค้า</a>
+				</li>
+				<li id="edit" class="">
+					<a href="#"><i class="fa fa-edit pull-left"></i> ปรับแต่ง</a>
+				</li>
+				
+			</ul>
+			<center>
+				<div id="polina">
+					<button>Pause</button>
+				</div> 
+			</center>
+			<ul class="social-icons">
+				<li class="showtext">
+					<a href="#rank" class="fa fa-user fa-2x" rel="clearbox[gallery=rank]">
+						<span>Rank</span>
+					</a>
+					<div class="showtext-div">
+						<div class="captext">แรงค์</div>
+					</div>
+				</li>
+				<li class="showtext">
+					<a href="#member" class="fa fa-group fa-2x" rel="clearbox[gallery=member]">
+						<span>Member</span>
+					</a>
+					<div class="showtext-div">
+						<div class="captext">สมาชิก</div>
+					</div>
+				</li>
+				<li class="showtext">
+					<a href="#message" class="fa fa-wechat fa-2x" rel="clearbox[gallery=message]">
+						<span>Message</span>
+					</a>
+					<div class="showtext-div">
+						<div class="captext">ข้อความ</div>
+					</div>
+				</li>
+				<li class="showtext">
+					<a href="#timeline" class="fa fa-globe fa-2x" rel="clearbox[gallery=timeline]">
+						<span>Timeline</span>
+					</a>
+					<div class="showtext-div">
+						<div class="captext">ทามไลน์</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="menu__overlay"></div>
+		
+		<div class="container">
+			<!--Start Guild Content-->
+			
+			<div class="logo" align="center"><img class="logo-size" src="logo.png" alt="AoTTG Dragon'sFaMiLy"></div>
+			
+			<div id="homeblock">
+				
+			<table class="tabbella" align="center" cellpadding="0" cellspacing="0"> 
+				<tbody> 
+					<tr> 
+						<td> 
+							<table class="mainbg" style="text-align:center;width:100%" cellpadding="4" cellspacing="1"> 
+				<tbody> 
+					<tr> 
+						<td class="ww boxx1" id="boxx1" colspan="1" style="width: 410px; position:relative"> 
+							<div id="coprente" style="position: absolute; height: 279px; width: 409px; display: none;"></div> 
+								<div style="background: #2E91F3; color: white; margin-left: auto"> 
+								DF STAFF 
+								</div> 
+								<a href="#1"><img id="log11" src="http://i.imgur.com/fGX3A3r.png"></a> 
+								<a href="#2"><img id="log12" src="http://i.imgur.com/UATiG1n.png"></a> 
+								<a href="#3"><img id="log13" src="http://i.imgur.com/uaRdtrR.png"></a> 
+								<a href="#4"><img id="log14" src="http://i.imgur.com/CnuFTzw.png"></a> 
+								<a href="#5"><img id="log15" src="http://i.imgur.com/VzhdYq2.png"></a> 
+								<a href="#6"><img id="log16" src="http://i.imgur.com/Aw1uIq8.png"></a> <br> 
+								<a href="#7"><img id="log21" src="http://i.imgur.com/r9ulr91.jpg"></a> 
+								<a href="#8"><img id="log22" src="http://i.imgur.com/e3OziGi.jpg"></a> 
+								<a href="#9"><img id="log23" src="http://i.imgur.com/nP72mVR.jpg"></a> 
+								<a href="#10"><img id="log24" src="http://i.imgur.com/0AiVmuO.jpg"></a> 
+								<a href="#11"><img id="log25" src="http://i.imgur.com/tNGQ7n7.jpg"></a> 
+								<a href="#12"><img id="log26" src="http://i.imgur.com/XFlyUa1.jpg"></a> 
+								<a href="#13"><img id="log27" src="http://i.imgur.com/HMJCok3.jpg"></a> 
+						</td> 
+						<td class="ww boxx2" colspan="2" style="width:55%"> 
+						<div class="esterno"> 
+							<div class="interno" id="interno"></div> 
+						</div> 
+						</td> 
+					</tr> 
+					 
+					<tr> 
+						<td id="boxx3" class="ww" colspan="2" style="width: 503px;"> 
+							<div id="slideshow"> 
+							<!-- Radio --> 
+								<input checked="checked" type="radio" name="pan" id="pan1"> 
+								<input type="radio" name="pan" id="pan2"> 
+								<input type="radio" name="pan" id="pan3"> 
+								<input type="radio" name="pan" id="pan4"> 
+								<input type="radio" name="pan" id="pan5"> 
+								<div id="slides"> 
+									<div id="mask"> 
+										<div class="slide_content"> 
+											<div class="pannello" id="p1" style="background: url(./Image/h1.png); background-size: 594px 275px;"> 
+											<!-- Pannello 1 --> 
+												<div><a href="#">แนะนำกิลด์ Dragon'sFaMiLY</a></div> 
+											</div> 
+											<div class="pannello" id="p1" style="background: url(http://i.imgur.com/v3kxPNm.png); background-size: 594px 275px;"> 
+											<!-- Pannello 1 --> 
+												<div><a href="#">แนะนำกิลด์ Dragon'sFaMiLY</a></div> 
+											</div> 
+											<div class="pannello" id="p1" style="background: url(http://i.imgur.com/wkuRHMN.png); background-size: 594px 275px;"> 
+											<!-- Pannello 1 --> 
+												<div><a href="#">แนะนำกิลด์ Dragon'sFaMiLY</a></div> 
+											</div> 
+											<div class="pannello" id="p1" style="background: url(http://i.imgur.com/dx6MqgG.jpg); background-size: 594px 275px;"> 
+											<!-- Pannello 1 --> 
+												<div><a href="#">แนะนำกิลด์ Dragon'sFaMiLY</a></div> 
+											</div> 
+											<div class="pannello" id="p1" style="background: url(http://i.imgur.com/3werX3E.jpg); background-size: 594px 275px;"> 
+											<!-- Pannello 1 --> 
+												<div><a href="#">แนะนำกิลด์ Dragon'sFaMiLY</a></div> 
+											</div> 
+										</div> 
+									</div> 
+								</div> 
+							</div> 
+							<div id="active"> 
+							<label for="pan1"></label> 
+							<label for="pan2"></label> 
+							<label for="pan3"></label> 
+							<label for="pan4"></label> 
+							<label for="pan5"></label> 
+							</div> 
+						</td> 
+						<td class="ww boxx4" colspan="1" style="width: 394px;"> 
+							<a href="#" style="background-color: #cc181e; color: white"> 
+							กฏและกติกาที่ต้องปฏิบัติ 
+							</a> 
+							<a href="#" style="background-color: #ff4400; color: white"> 
+							กิจกรรมหลัก 
+							</a> 
+							<a href="#" style="background-color: orange; color: white"> 
+							กิจกรรมรอง 
+							</a> 
+							<a href="#" style="background-color: green; color: white"> 
+							จัดอันดับ 
+							</a> 
+							<a href="#" style="background-color: #066a5f; color: white"> 
+							หน่วยกิลด์ 
+							</a> 
+							<a href="#" style="background-color: #3a5795; color: white"> 
+							คำถามที่พบบ่อย 
+							</a> 
+							<a href="#" style="background-color: #a830d3; color: white"> 
+							เยี่ยมชมแฟนเพจกิลด์ 
+							</a> 
+						</td> 
+					</tr> 
+		 
+					<tr> 
+						<td class="ww boxx5" colspan="3"> 
+						<table> 
+							<tbody> 
+								<tr> 
+									<td> <a id="completibutton" href="https://www.facebook.com/aottgdf"> 
+									Page <br>Dragon'sFaMiLy 
+									</a> </td> 
+									<td> <a id="incorsobutton" href="http://aotskins.com/"> 
+									AoTTG <br>AoT-Skin 
+									</a> </td> 
+									<td> <a id="moviebutton" href="http://www.youtube.com/c/friendrpgth"> 
+									Channel <br>FriendRPG TV 
+									</a> </td> 
+								</tr> 
+							</tbody> 
+						</table> 
+						</td> 
+					</tr> 
+		 
+					<tr> 
+						<td class="ww boxx6" colspan="3"> 
+							<input type="submit" value="[Open] รับสมัครเข้ากิลด์ Dragon'sFaMiLy" class="tabellainput">
+						</td> 
+					</tr> 
+					 
+					<tr> 
+						<td class="ww boxx6" colspan="3"> 
+							<iframe src="http://www.bakaradio.net/musicbox/anime/radio.php?anime=4" width="960" height="200" frameborder="0" scrolling="no"></iframe> 
+					</td> 
+					</tr> 
+				</tbody> 
+			</table>
+			</td> 
+			</tr> 
+			</tbody> 
+			</table>
+			</div>
+			<!--Quest Content-->
+			<div id="questblock" class="edit">
+				<a id="home1" href="#home" class="edit"><i class="fa fa-home"></i> หน้าหลัก </a> > <a href="#edit" class="edit" id="actived"><i class="fa fa-windows"></i> เควส</a>
+				<hr>
+				<h2>Quest Bronze</h2>
+				</br>
+				<div align="center">
+					<div id="editprofile" align="center">
+					
+						<button>Mission I</button>
+						</br>
+						<button>Mission II</button>
+						</br>
+						<button>Mission III</button>
+						
+					</div>
+				</div>
+				</br>
+				<h2>Quest Silver</h2>
+				</br>
+				<div align="center">
+					<div id="editprofile" align="center">
+					
+						<button>Mission I</button>
+						</br>
+						<button>Mission II</button>
+						</br>
+						<button>Mission III</button>
+						
+					</div>
+				</div>
+				</br>
+				<h2>Quest Gold</h2>
+				</br>
+				<div align="center">
+					<div id="editprofile" align="center">
+					
+						<button>Mission I</button>
+						</br>
+						<button>Mission II</button>
+						</br>
+						<button>Mission III</button>
+						
+					</div>
+				</div>
+				</br>
+				<h2>Quest Platinum</h2>
+				</br>
+				<div align="center">
+					<div id="editprofile" align="center">
+					
+						<button>Mission I</button>
+						</br>
+						<button>Mission II</button>
+						</br>
+						<button>Mission III</button>
+						
+					</div>
+				</div>
+				</br>
+				<h2>Quest Diamond</h2>
+				</br>
+				<div align="center">
+					<div id="editprofile" align="center">
+					
+						<button>Mission I</button>
+						</br>
+						<button>Mission II</button>
+						</br>
+						<button>Mission III</button>
+						
+					</div>
+				</div>
+				</br>
+				<h2>Quest Master</h2>
+				</br>
+				<div align="center">
+					<div id="editprofile" align="center">
+					
+						<button>Mission I</button>
+						</br>
+						<button>Mission II</button>
+						</br>
+						<button>Mission III</button>
+						
+					</div>
+				</div>
+				</br>
+				<h2>Quest GrandMaster</h2>
+				</br>
+				<div align="center">
+					<div id="editprofile" align="center">
+					
+						<button>Mission I</button>
+						</br>
+						<button>Mission II</button>
+						</br>
+						<button>Mission III</button>
+						
+					</div>
+				</div>
+				</br>
+				<h2>Quest Top 5</h2>
+				</br>
+				<div align="center">
+					<div id="editprofile" align="center">
+					
+						<button>Mission I</button>
+						</br>
+						<button>Mission II</button>
+						</br>
+						<button>Mission III</button>
+						
+					</div>
+				</div>
+				</br>
+				<h2>Quest Xtreeme</h2>
+				</br>
+				<div align="center">
+					<div id="editprofile" align="center">
+					
+						<button>Final Mission</button>
+						
+					</div>
+				</div>
+				
+			</div>
+			<!--Quest Content-->
+			
+			<!--Shop Content-->
+			<div id="shopblock" class="edit">
+				<a id="home2"  href="#home" class="edit"><i class="fa fa-home"></i> หน้าหลัก </a> > <a href="#edit" class="edit" id="actived"><i class="fa fa-shopping-bag"></i> ร้านค้า</a>
+				<hr>
+				<h2>Skin</h2>
+				</br>
+				<div align="center">
+					<div id="editprofile" align="center">
+					
+						<button>Male Skins</button>
+						</br>
+						<button>Female Skins</button>
+						</br>
+						<button>Guild Skins</button>
+						
+					</div>
+				</div>
+				</br>
+				<h2>Map</h2>
+				</br>
+				<div align="center">
+					<div id="editprofile" align="center">
+						
+						<button>Map 1K</button>
+						</br>
+						<button>Map PVP</button>
+						</br>
+						<button>Map Racing</button>
+						
+					</div>
+				</div>
+				</br>
+				<h2>Logic</h2>
+				</br>
+				<div align="center">
+					<div id="editprofile" align="center">
+						
+						<button>Basic</button>
+						</br>
+						<button>Region</button>
+						</br>
+						<button>Command</button>
+						
+					</div>
+				</div>
+				
+			</div>
+			<!--Shop Content-->
+			
+			<!--Edit Content-->
+			<div id="editblock" class="edit">
+				<a id="home3"  href="#home" class="edit"><i class="fa fa-home"></i> หน้าหลัก </a> > <a href="#edit" class="edit" id="actived"><i class="fa fa-edit"></i> ปรับแต่ง</a>
+				<hr>
+				<h2>โปรไฟล์</h2>
+				</br>
+				<div align="center">
+					<div id="editprofile" align="center">
+						<a href="#"><img id="myprofile2" class="avatar"></a> <button id="btnprofile">Edit Profile</button>
+						
+						<span>ชื่อ :</span>
+						<span id="myname">GUEST2018</span> <button id="btnprofilename">เปลี่ยนชื่อ</button>
+						</br>
+						<span>หน่วย :</span>
+						<span id="myguild">Dragon'sFaMiLy</span> <button id="btnprofileguild">เปลี่ยนหน่วย</button>
+					</div>
+				</div>
+				</br>
+				<h2>พื้นหลัง</h2>
+				</br>
+				<div align="center">
+					<div id="editprofile" align="center">
+						
+						<button>เมนูพื้นหลัง</button>
+						</br>
+						<button>ภาพพื้นหลัง</button>
+						</br>
+						<button>วิดีโอพื้นหลัง</button>
+						
+					</div>
+				</div>
+				
+			</div>
+			<!--Edit Content-->
+			<!--End Guild Content-->
+		</div>
+		
+		<div class="app__content">
+		
+			
+			
+			
+		  <div class="card"></div>
+			
+		
+		  <div class="toast__msg"></div>
+		</div>
+	</div>
+  
+	<div style="height:700px"></div>
+
+  <!-- Modal  -->
+	<div id="myModal" class="modal">
+	  <span class="close">×</span>
+		<img class="modal-content" id="img01">
+	  <div id="caption" class="copy"></div>
+	</div>
+	
+	<div id="ModalM" class="modalM">
+		<div class="modalM-content">
+		<span class="closeM">×</span>
+		<center><p id="to-modal-title"></p></center>
+		<center>
+			<div id="MeditProfile">
+				<img id="myprofile3" class="avatar" alt="Profile">
+				</br></br>
+				<input type="text" id="setprofile" placeholder="Image url .png / .jpg / .gif"></input>
+				<button id="subprofile">OK</button>
+			</div>
+			<div id="MeditName">
+				<span id="name"></span>
+				<input type="text" id="setname" placeholder="Name"></input>
+				<button id="subname">OK</button>
+			</div>
+			<div id="MeditGuild">
+				<span id="guild"></span>
+				<input type="text" id="setguild" placeholder="Guild 1.blue/2.black/3.red "></input>
+				<button id="subguild">OK</button>
+			</div>
+		</center>
+		</div>
+	</div>
+
+  <!-- JS Files  -->
+	<script src="./js/toast.js"></script>
+	<script src="./js/menu.js"></script>
+	<script src="./js/guild.js"></script>
+	<script src="./js/anime.js"></script>
+  
+  <!-- JS Script  -->
+	<script>
+		document.body.style.backgroundImage = 'url(./images/bg.jpg)';
+		document.body.style.backgroundRepeat = 'no-repeat';
+		document.body.style.backgroundPosition = 'center';
+		document.body.style.backgroundAttachment = 'fixed';
+		document.body.style.backgroundSize = 'cover';
+	</script>
+	
+	<script type="text/javascript">
+	var vid = document.getElementById("bgvideo");
+    var pauseButton = document.querySelector("#polina button");
+
+	function vidFade() {
+	  vid.classList.add("stopfade");
+	}
+	
+	vid.addEventListener('ended', function()
+	{
+		vid.pause();
+		vidFade();
+	}); 
+	
+	pauseButton.addEventListener("click", function() {
+	  vid.classList.toggle("stopfade");
+	  if (vid.paused) {
+	    vid.play();
+	    pauseButton.innerHTML = "Pause";
+	  } else {
+	    vid.pause();
+	    pauseButton.innerHTML = "Play";
+	  }
+	})
+	</script>
+  </body>
+</html>
