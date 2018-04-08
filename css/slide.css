@@ -1,0 +1,194 @@
+.mainbg a{
+	text-decoration:none;
+}
+#slideshow {text-align: center; float:right; width: 594px; height: 275px; border: 2px solid #6B93F2} 
+#slideshow input {display: none} 
+#mask {margin-bottom: 55px; float:right; overflow:hidden; background: #131313; height: 271px} 
+#mask .img {border-radius: 0} 
+.slide_content {position: relative; width: 500%; -webkit-transition: all 800ms cubic-bezier(0.670, 0.000, 0.170, 1.000); -moz-transition: all 800ms cubic-bezier(0.670, 0.000, 0.170, 1.000); -ms-transition: all 800ms cubic-bezier(0.670, 0.000, 0.170, 1.000); -o-transition: all 800ms cubic-bezier(0.670, 0.000, 0.170, 1.000); transition: all 800ms cubic-bezier(0.670, 0.000, 0.170, 1.000)} 
+#pan1:checked ~ #slides .slide_content {margin-left: 0} 
+#pan2:checked ~ #slides .slide_content {margin-left: -100%} 
+#pan3:checked ~ #slides .slide_content {margin-left: -200%} 
+#pan4:checked ~ #slides .slide_content {margin-left: -300%} 
+#pan5:checked ~ #slides .slide_content {margin-left: -400%} 
+.pannello {width: 20%; float: left; height: 275px} 
+.pannello > div {margin-top: 200px; font-size: 20px; font-weight: bold; background: rgba(0, 0, 0, 0.7); padding: 13px 20px 50px 10px; color: #D7D7D7; text-shadow: 0 2px 3px rgba(0, 0, 0, .4)} 
+.pannello a {color: #8FBDE9; font-weight: normal} 
+.pannello a:hover {color: #D7D7D7} 
+#active {margin-top: 243px; position: absolute; width: 50%} 
+#active label {display: inline-block; width: 7px; height: 7px; border-radius: 1em; border: 2px solid #FFF; margin: 5px; cursor: pointer; opacity: 0.5} 
+#active label:hover {background: #000} 
+#pan1:checked ~ #active label:nth-child(1), 
+#pan2:checked ~ #active label:nth-child(2), 
+#pan3:checked ~ #active label:nth-child(3), 
+#pan4:checked ~ #active label:nth-child(4), 
+#pan5:checked ~ #active label:nth-child(5) {background: #D7D7D7} 
+#slideshow, .last-post, .altro {display: inline-block} 
+ 
+ 
+ /* tabella */ 
+ .boxx1 {padding-top: 0 !important} 
+ 
+.tabbella .boxx1 div {margin-bottom: 10px; 
+font: 76%/1.6em Verdana, Tahoma, Arial, Sans-serif; 
+margin-bottom: 10px; 
+height: 36px; 
+line-height: 36px; 
+font-size: 25px} 
+ 
+.tabbella .boxx1 img {border: 2px solid #6B93F2; 
+-webkit-transition: all 0.6s ease; /* For Safari 3.1 to 6.0 */ 
+ transition: all 0.6s ease} 
+ 
+#log11, #log12, #log13, #log14, #log15, #log16 {margin-bottom: 5px; 
+background-color: #CED9F2; width: 63px} 
+ 
+#log11:hover, #log12:hover, #log13:hover, #log14:hover, #log15:hover {background-color: #F3CDA7} 
+ 
+.tabbella .boxx1 img:hover {border: 2px solid #E86D4C; 
+border-radius: 0 13px 0 13px} 
+ 
+#coprente {display: none} 
+ 
+.tabbella .boxx2 div.esterno {height: 275px; 
+width: 578px; 
+border: 2px solid #6B93F2; 
+background: url(http://i.imgur.com/6Jeo42k.png) repeat; 
+overflow: hidden; 
+position: relative} 
+ 
+.tabbella .boxx2 div.interno {position: absolute; 
+top: 0; 
+background: url('http://i.imgur.com/4dr1uwy.png') no-repeat; 
+background-position: 0; 
+height: 275px; 
+width: 578px; 
+-webkit-transition: background-position 0.6s ease-in-out, background-image 0.3s ease-in-out; /* For Safari 3.1 to 6.0 */ 
+ transition: background-position 0.6s ease-in-out, background-image 0.3s ease-in-out} 
+ 
+/* render della tabella */ 
+.shuri {background: url('http://i.imgur.com/CkxqeKt.png') no-repeat !important; 
+background-size: auto; 
+background-position: -318px 0 !important} 
+ 
+ .pein {background: url('http://i.imgur.com/6YEQkWM.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .vale {background: url('http://i.imgur.com/NomLoGZ.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .iota {background: url('http://i.imgur.com/lFlKqk5.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .kuma {background: url('http://i.imgur.com/CXKlfu2.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .man {background: url('http://i.imgur.com/heHZEKw.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .blacky {background: url('http://i.imgur.com/en3lAae.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .mad {background: url('http://i.imgur.com/3T4K8it.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .mieti {background: url('http://i.imgur.com/UqCHRRw.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .rat {background: url('http://i.imgur.com/L0R8o58.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .cactus {background: url('http://i.imgur.com/leAkasY.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .emperor {background: url('http://i.imgur.com/vVfuH1V.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .dark {background: url('http://i.imgur.com/J0RDRrT.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .matt {background: url('http://i.imgur.com/Hx5QhwE.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+.progeus {background: url('http://i.imgur.com/aJpaftr.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .kage {background: url('http://i.imgur.com/eM0g0BF.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .dragon {background: url('http://i.imgur.com/Hx5QhwE.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .buckle {background: url('http://i.imgur.com/Hx5QhwE.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .yuu {background: url('http://i.imgur.com/Hx5QhwE.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .tizio {background: url('http://i.imgur.com/Hx5QhwE.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+.tabbella .boxx4, .tabbella .boxx3 {padding-bottom: 0} 
+ 
+.tabbella .boxx4 a {display: block; 
+font: 76%/1.6em Verdana, Tahoma, Arial, Sans-serif; 
+margin-bottom: 5px; 
+height: 35px; 
+line-height: 36px; 
+font-size: 25px; 
+opacity: 0.7; 
+-webkit-transition: all 0.3s ease; /* For Safari 3.1 to 6.0 */ 
+ transition: all 0.5s ease} 
+ 
+.tabbella .boxx4 a:hover {border-radius: 0 13px 0 13px; 
+opacity: 1} 
+ 
+.tabbella .boxx5 {padding: 0} 
+ 
+.tabbella .boxx5 a {display: block; 
+font-weight: bold; 
+margin: auto; 
+float: left; 
+color: white; 
+opacity: 0.8; 
+font: 76%/1.6em Verdana, Tahoma, Arial, Sans-serif; 
+margin-bottom: 0; 
+line-height: 36px; 
+font-size: 25px; 
+-webkit-transition: all 0.3s ease; /* For Safari 3.1 to 6.0 */ 
+ transition: all 0.5s ease; 
+ width: 100%} 
+ 
+ .tabbella .boxx5 a:hover {background-color: #FF0027 !important; 
+ border-radius: 0 13px 0 13px} 
+ 
+ .tabbella .boxx5 table {width: 100%} 
+ .tabbella .boxx5 table td {padding-left: 3px; padding-right: 3px; width: 33%} 
+ 
+#incorsobutton {background-color: #FFA100; 
+background-image: url('http://i.imgur.com/x3bujDv.png'); 
+background-position: right bottom; 
+background-repeat: no-repeat} 
+ 
+#completibutton {background-color: #67D9FF; 
+background-image: url('./Image/b2.png'); 
+background-position: right bottom; 
+background-repeat: no-repeat} 
+ 
+#moviebutton {background-color: #FF0091; 
+background-image: url('http://i.imgur.com/UsQygdq.png'); 
+background-position: right bottom; 
+background-repeat: no-repeat} 
+ 
+.tabellainput {height: 60px; 
+ font-size: 25px; 
+ background-color: #000 !important; 
+ color: #FFF; 
+ width: 100%; 
+ border-radius: 0 !important; 
+ -webkit-transition: all 0.5s ease; /* For Safari 3.1 to 6.0 */ 
+ transition: all 0.5s ease; 
+ opacity: 0.8} 
+ 
+ .tabellainput:hover {background-color: #FF0027 !important; 
+ border-radius: 0 13px 0 13px !important}

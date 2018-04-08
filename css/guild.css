@@ -1,0 +1,566 @@
+HTML::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+HTML::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+HTML::-webkit-scrollbar-thumb
+{
+	background-color: #3399FF;	
+	background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent)
+}
+
+DIV::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+DIV::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+DIV::-webkit-scrollbar-thumb
+{
+	background-color: #3399FF;	
+	background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent)
+}
+/* GUILD */
+#cleardiv {
+	clear: both; 
+	margin-bottom: -1em;
+}
+.container {
+	position: relative;
+	margin: 70px auto; 
+	padding: 20px;
+	background: rgba(0, 0, 0, 0.5); 
+	border-radius: 10px; 
+	-moz-border-radius: 10px;
+}
+.container {
+	max-width: 1030px;
+}
+@media screen and (max-width:960px) {
+	.container {max-width: 100%; width: auto;}
+}
+@media screen and (max-width: 960px) {
+	.container {max-width: 100%; width: auto;}
+} 
+
+.edit {
+	color: #fff;
+    text-decoration: none;
+}
+.edit a:hover {
+	color: #39f;    
+	text-shadow: 0px 0px 4px rgb(73, 188, 255);
+}
+#actived {
+	color:#3399ff;
+}
+.logo { 
+  display: block;
+  cursor: pointer;
+  transition: .3s background;
+  
+}
+.logo-size {
+	width:773px;
+	height:280px;
+}
+.profile {
+	margin-top:30px;
+}
+.profile .row {
+	text-align-last: center;
+}
+.avatar {
+	width:128px;
+	border-radius:64px;
+	overflow:hidden;
+}
+.brand {
+	line-height:20px;
+	font-size:20px;
+	
+}
+.brand a {
+	text-decoration:none;
+	color:#fff;
+}
+.tagline {
+	color:#fff;
+	font-size:20px;
+	font-weight:400;
+}
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.nav>li {
+    position: relative;
+    display: block;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+	text-decoration:none;
+}
+.nav-list .fa{
+	font-size:1.5em;
+	color:#fff;
+}
+.nav-list>.active>a .fa,.nav-list>.active>a:hover .fa,.nav-list>.active>a:focus .fa,.nav-list>li>a:hover .fa{
+	color:#fff;
+}
+.nav-list a,.nav-list a:link,.nav-list i{
+	line-height:50px;
+	padding:0px 20px 0px 10px;
+	color:#fff;
+}
+.nav-list>.active>a,.nav-list>.active>a:hover,.nav-list>.active>a:focus,.nav-list>li>a:hover{
+	text-shadow:none;
+	background:rgba(0,0,0,0.35);
+}
+.nav-list>li>a,.nav-list .nav-header{
+	text-shadow:none;
+	background:none;
+}
+.social-icons {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+ul.social-icons {
+    padding: 0;
+    margin: 0;
+}
+.social-icons li{
+	display:inline-block;
+	margin-right:15px;
+}
+.social-icons a{
+	color:#fff;
+	text-decoration:none;
+}
+.social-icons a:hover{
+	color:#fff;
+	text-decoration:none;
+}
+.social-icons a span{
+	display:none;
+}
+.showtext-div {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: -72px;
+    border-radius: 30px;
+}
+.showtext:hover .showtext-div {
+    display: block;
+}
+.captext {
+    padding: 2px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#editprofile {
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font-weight:100; 
+  */
+  background: rgba(0,0,0,0.3);*/
+  color: white;
+  width: 40%;
+}
+#editprofile button { 
+  display: block;
+  width: 80%;
+  padding: .4rem;
+  border: none; 
+  margin: 2rem auto; 
+  font-size: 18px;
+  background: rgba(255,255,255,0.23);
+  color: #fff;
+  border-radius: 3px; 
+  cursor: pointer;
+  transition: .3s background;
+}
+#editprofile button:hover { 
+   background: rgba(0,0,0,0.5);
+}
+#polina {
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font-weight:100; 
+  */
+  background: rgba(0,0,0,0.3);*/
+  color: white;
+  width: 40%;
+  margin:0rem;
+  font-size: 11.2rem;
+}
+#polina button { 
+  display: block;
+  width: 80%;
+  padding: .4rem;
+  border: none; 
+  margin: 2rem auto; 
+  font-size: 18px;
+  background: rgba(255,255,255,0.23);
+  color: #fff;
+  border-radius: 3px; 
+  cursor: pointer;
+  transition: .3s background;
+}
+#polina button:hover { 
+   background: rgba(0,0,0,0.5);
+}
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+    transition: 1s opacity;
+}
+@media screen and (max-device-width: 800px) {
+	#bgvideo { display: none; }
+	#polina { display: none; }
+	.profile {
+		margin-top:10px;
+		margin-left:10px;
+		padding-bottom:10px;
+	}
+	.profile .row {
+		text-align-last: left;
+		float:left;
+	}
+	.avatar {
+		max-width: 80px;
+	}
+	.brand {
+		padding-left: 10px;
+		
+	}
+	.tagline {
+		padding-left: 10px;
+	}
+	.nav {
+		margin-top: 60px;
+	}
+	.logo-size {
+		width: 370px;
+		height: 150px
+	}
+	.modalM  input[type=text] {
+		width: 100%;
+	}
+	#homeblock {
+		display: none;
+	}
+}
+
+/* End*/
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+#questblock {
+	display: none;
+}
+#shopblock {
+	display: none;
+}
+#editblock {
+	display: none;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    z-index: 2;
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 50%;
+    max-width: 350px;
+    max-height: 350px;
+    box-shadow: 0px 0px 0px #ffe000;
+}
+.modalM {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+.modalM-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    padding: 20px;
+    border: 1px solid #888;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modalM  input[type=text] {
+    padding: 6px;
+    font-size: 17px;
+    text-align: center;
+    width: 300px;
+    border: none;
+}
+
+.modalM button { 
+  display: block;
+  width: 150px;
+  padding: .4rem;
+  border: none; 
+  margin: 2rem auto; 
+  font-size: 18px;
+  background: rgba(255,255,255,0.23);
+  color: #fff;
+  border-radius: 3px; 
+  cursor: pointer;
+  transition: .3s background;
+}
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    font-size: 25px;
+    color: #ccc;
+    text-shadow: 0px 0px 7px #3399ff;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.closeM {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.closeM:hover,
+.closeM:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/*   ANIME   */
+.shuri {background: url('http://i.imgur.com/YCOeEcm.png') no-repeat !important; 
+background-size: auto; 
+background-position: -318px 0 !important} 
+ 
+ .pein {background: url('http://i.imgur.com/btThsgI.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .vale {background: url('http://i.imgur.com/UKqBNh1.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .iota {background: url('http://i.imgur.com/x9nRo6J.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .kuma {background: url('http://i.imgur.com/Jf7guc1.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .matt {background: url('http://i.imgur.com/YvoqwdF.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+.progeus {background: url('http://i.imgur.com/mHbLWtX.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .blacky {background: url('http://i.imgur.com/2hW5cLt.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .dragon {background: url('http://i.imgur.com/eOwl8xq.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .buckle {background: url('http://i.imgur.com/aThS6OT.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .yuu {background: url('http://i.imgur.com/i5wktv4.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .mieti {background: url('http://i.imgur.com/gxLSAW5.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .kage {background: url('http://i.imgur.com/hxbALqO.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .mad {background: url('http://i.imgur.com/o1Cu4AO.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .rat {background: url('http://i.imgur.com/1WrBobC.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .tizio {background: url('http://i.imgur.com/EvhUnNl.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .cactus {background: url('http://i.imgur.com/yj545Pw.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .emperor {background: url('http://i.imgur.com/X6zI5pF.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .man {background: url('http://i.imgur.com/lZAbwPr.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+ .dark {background: url('http://i.imgur.com/c9fsyaz.png') no-repeat !important; 
+background-position: -318px 0 !important} 
+ 
+.tabbella .boxx4, .tabbella .boxx3 {padding-bottom: 0} 
+ 
+.tabbella .boxx4 a {display: block; 
+font: 76%/1.6em Verdana, Tahoma, Arial, Sans-serif; 
+margin-bottom: 5px; 
+height: 35px; 
+line-height: 36px; 
+font-size: 25px; 
+opacity: 0.7; 
+-webkit-transition: all 0.3s ease; /* For Safari 3.1 to 6.0 */ 
+ transition: all 0.5s ease} 
+ 
+.tabbella .boxx4 a:hover {border-radius: 0 13px 0 13px; 
+opacity: 1} 
+ 
+.tabbella .boxx5 {padding: 0} 
+ 
+.tabbella .boxx5 a {display: block; 
+font-weight: bold; 
+margin: auto; 
+float: left; 
+color: white; 
+opacity: 0.8; 
+font: 76%/1.6em Verdana, Tahoma, Arial, Sans-serif; 
+margin-bottom: 0; 
+line-height: 36px; 
+font-size: 25px; 
+-webkit-transition: all 0.3s ease; /* For Safari 3.1 to 6.0 */ 
+ transition: all 0.5s ease; 
+ width: 100%} 
+ 
+ .tabbella .boxx5 a:hover {background-color: #FF0027 !important; 
+ border-radius: 0 13px 0 13px} 
+ 
+ .tabbella .boxx5 table {width: 100%} 
+ .tabbella .boxx5 table td {padding-left: 3px; padding-right: 3px; width: 33%} 
+ 
+#incorsobutton {background-color: #FFA100; 
+background-image: url('http://i.imgur.com/KPuwodU.png'); 
+background-position: right bottom; 
+background-repeat: no-repeat} 
+ 
+#completibutton {background-color: #67D9FF; 
+background-image: url('http://i.imgur.com/lFzPK1D.png'); 
+background-position: right bottom; 
+background-repeat: no-repeat} 
+ 
+#moviebutton {background-color: #DC00E6; 
+background-image: url('http://i.imgur.com/FEeZIAC.png'); 
+background-position: right bottom; 
+background-repeat: no-repeat} 
+ 
+.tabellainput {height: 60px; 
+ font-size: 25px; 
+ background-color: green !important; 
+ width: 100%; 
+ border-radius: 0 !important; 
+ -webkit-transition: all 0.5s ease; /* For Safari 3.1 to 6.0 */ 
+ transition: all 0.5s ease; 
+ opacity: 0.8} 
+ 
+ .tabellainput:hover {background-color: #FF0027 !important; 
+ border-radius: 0 13px 0 13px !important} 
+ 
+/* Table Anime */ 
+
+ 
