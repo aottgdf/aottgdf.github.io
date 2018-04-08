@@ -114,7 +114,9 @@ window.onload = function() {
 		myprofile2.src = "./images/Chakung.png";
 		myprofile3.src = "./images/Chakung.png";
 	}
+	
 }
+
 
 window.onclick = function(event){
     if (event.target == myModal) {
@@ -154,6 +156,72 @@ document.getElementsByClassName("closeM")[0].onclick = function() {
 	document.getElementById('ModalM').style.display = "none";
 }
 
+var Staff = document.getElementsByClassName("staff")[0];
+var Staff1 = document.getElementsByClassName("staff")[1];
+var Staff2 = document.getElementsByClassName("staff")[2];
+var Staff3 = document.getElementsByClassName("staff")[3];
+var Staff4 = document.getElementsByClassName("staff")[4];
+var Staff5 = document.getElementsByClassName("staff")[5];
+var Staff6 = document.getElementsByClassName("staff")[6];
+var Staff7 = document.getElementsByClassName("staff")[7];
+var Staff8 = document.getElementsByClassName("staff")[8];
+var Staff9 = document.getElementsByClassName("staff")[9];
+var Staff10 = document.getElementsByClassName("staff")[10];
+var Staff11 = document.getElementsByClassName("staff")[11];
+var Staff12 = document.getElementsByClassName("staff")[12];
+
+Staff.onclick = function() { 
+	myModal.style.display = "block";
+	img01.src = this.src;
+}
+Staff1.onclick = function() { 
+	myModal.style.display = "block";
+	img01.src = this.src;
+}
+Staff2.onclick = function() { 
+	myModal.style.display = "block";
+	img01.src = this.src;
+}
+Staff3.onclick = function() { 
+	myModal.style.display = "block";
+	img01.src = this.src;
+}
+Staff4.onclick = function() { 
+	myModal.style.display = "block";
+	img01.src = this.src;
+}
+Staff5.onclick = function() { 
+	myModal.style.display = "block";
+	img01.src = this.src;
+}
+Staff6.onclick = function() { 
+	myModal.style.display = "block";
+	img01.src = this.src;
+}
+Staff7.onclick = function() { 
+	myModal.style.display = "block";
+	img01.src = this.src;
+}
+Staff8.onclick = function() { 
+	myModal.style.display = "block";
+	img01.src = this.src;
+}
+Staff9.onclick = function() { 
+	myModal.style.display = "block";
+	img01.src = this.src;
+}
+Staff10.onclick = function() { 
+	myModal.style.display = "block";
+	img01.src = this.src;
+}
+Staff11.onclick = function() { 
+	myModal.style.display = "block";
+	img01.src = this.src;
+}
+Staff12.onclick = function() { 
+	myModal.style.display = "block";
+	img01.src = this.src;
+}
 document.getElementsByClassName("avatar")[0].onclick = function() { 
 	myModal.style.display = "block";
 	img01.src = this.src;

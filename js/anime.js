@@ -1,5 +1,6 @@
 
-document.addEventListener("DOMContentLoaded", function() { 
+document.addEventListener("DOMContentLoaded", function() {
+	//1
 document.getElementById("log11").addEventListener("mouseover", function(){ 
  var d = document.getElementById("interno"); 
 d.className = d.className + " shuri"; 
@@ -9,7 +10,7 @@ document.getElementById("log11").addEventListener("mouseout", function(){
 var d = document.getElementById("interno"); 
 d.className = "interno"; 
 }); 
- 
+	//2
 document.getElementById("log12").addEventListener("mouseover", function(dgaung){ 
  var d = document.getElementById("interno"); 
 d.className = d.className + " pein"; 
@@ -19,7 +20,7 @@ document.getElementById("log12").addEventListener("mouseout", function(){
 var d = document.getElementById("interno"); 
 d.className = "interno"; 
 }); 
- 
+	//3
 document.getElementById("log13").addEventListener("mouseover", function(){ 
  var d = document.getElementById("interno"); 
 d.className = d.className + " vale"; 
@@ -29,7 +30,7 @@ document.getElementById("log13").addEventListener("mouseout", function(){
 var d = document.getElementById("interno"); 
 d.className = "interno"; 
 }); 
- 
+	//4
 document.getElementById("log14").addEventListener("mouseover", function(){ 
  var d = document.getElementById("interno"); 
 d.className = d.className + " iota"; 
@@ -39,7 +40,7 @@ document.getElementById("log14").addEventListener("mouseout", function(){
 var d = document.getElementById("interno"); 
 d.className = "interno"; 
 }); 
- 
+	//5
 document.getElementById("log15").addEventListener("mouseover", function(){ 
  var d = document.getElementById("interno"); 
 d.className = d.className + " kuma"; 
@@ -49,7 +50,7 @@ document.getElementById("log15").addEventListener("mouseout", function(){
 var d = document.getElementById("interno"); 
 d.className = "interno"; 
 }); 
- 
+	//6
 document.getElementById("log16").addEventListener("mouseover", function(){ 
  var d = document.getElementById("interno"); 
 d.className = d.className + " man"; 
@@ -59,7 +60,7 @@ document.getElementById("log16").addEventListener("mouseout", function(){
 var d = document.getElementById("interno"); 
 d.className = "interno"; 
 }); 
- 
+	//1
 document.getElementById("log21").addEventListener("mouseover", function(){ 
  var d = document.getElementById("interno"); 
 d.className = d.className + " blacky"; 
@@ -69,7 +70,7 @@ document.getElementById("log21").addEventListener("mouseout", function(){
 var d = document.getElementById("interno"); 
 d.className = "interno"; 
 }); 
- 
+	//2
 document.getElementById("log22").addEventListener("mouseover", function(){ 
  var d = document.getElementById("interno"); 
 d.className = d.className + " mad"; 
