@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	//1
 document.getElementById("log11").addEventListener("mouseover", function(){ 
  var d = document.getElementById("interno"); 
-d.className = d.className + " shuri"; 
+d.className = d.className + " chakung"; 
 }); 
  
 document.getElementById("log11").addEventListener("mouseout", function(){ 
