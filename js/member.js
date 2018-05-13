@@ -18,7 +18,7 @@ function Search(){
     }
 }
 var Member = ["ChaKung","Kaito","MaGuMi","Silver Wolf","Nice","bankzaza","SoRA lillybryce25","Amadeus"];
-var Profile = ["./images/chakung.png",
+var Profile = ["./images/Chakung.png",
 "./images/P_kaito.jpg",
 "./images/P_may.jpg",
 "./images/P_boat.jpg",
