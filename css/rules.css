@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #000;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+.container {
+    color: black;
+    padding: 5px 5px;
+    position: relative;
+    background-color: inherit;
+    width: 100%;
+}
+.content {
+    position: relative;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+}
+.top {
+    height: 150px;
+    background: linear-gradient(to bottom, #cc181c 0%, #222 90%);
+}
+.profile {
+    position: relative;
+    margin-top: -100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    background-size: 100px 100px;
+    border: 6px solid white;
+    transition: 250ms linear;
+    z-index: 2;
+}
+.profile:hover {
+    opacity: 0.6;
+}
+.profilebg {
+    content: '';
+    position: relative;
+    margin-top: -55px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    background-size: 100px 100px;
+    border: 6px solid white;
+    transition: 250ms linear;
+    z-index: 2;
+}
+name {
+    tex-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+c {
+    font-size: 14px;
+}
+ht {
+    color: #fff;
+    background-color: #00cccc;
+}
+.img {
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    transition: 250ms linear;
+}
+.img:hover {
+    opacity: 0.6;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    botton: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    z-index: 2;
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 1000px;;
+}
+
+/* The Close Button */
+.close {
+    position: fixed;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+}

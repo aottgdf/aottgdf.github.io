@@ -1,0 +1,46 @@
+  #i-frame {
+      display: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: none;
+      z-index: 2;
+      background-color: #fff;
+  }
+  #i-frame-content {
+  color: #000;
+  margin: 52px auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  }
+  #name-i {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  }
+  .closei {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: #000;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  }
+  
+  .closei:hover,
+  .closei:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+  }
+  #myFrame {
+  border: none;
+  }

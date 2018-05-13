@@ -1,0 +1,39 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #222;
+}
+name {
+    color: #3399ff;
+    font-size: 16px;
+    font-weight: bold;
+}
+name::after {
+    content: ':';
+}
+#msg {
+    color: white;
+    margin-top: 5px;
+}
+#chat {
+    color: black;
+    position: absolute;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    bottom: 112px;
+    overscroll-behavior: contain;
+    z-index: 4;
+}
+#input {
+    position: fixed;
+    font-size: 16px;
+    width: 100%;
+    bottom: 52px;
+    left:0;
+    padding: 12px 10px 12px 10px;
+    border: 1px solid #ddd;
+    z-index: 5;
+}

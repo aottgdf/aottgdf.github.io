@@ -61,6 +61,7 @@ h3 {
 /* MAIN styles */
 
 body {
+  background-color: #222;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1rem;
   -webkit-font-smoothing: antialiased;
@@ -85,7 +86,7 @@ header {
   width: 100%;
   height: 56px;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0);
   display: -webkit-box;
   display: -ms-flexbox;
