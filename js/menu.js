@@ -9,8 +9,16 @@
   menuOverlayElement.addEventListener('click', hideMenu, false);
   menuElement.addEventListener('transitionend', onTransitionEnd, false);
 
+function VerticalOn(){
+document.body.style.overflow = "hidden";
+}
+
+function VerticalOff(){
+document.body.style.overflow = "visible";
+}
    //To show menu
   function showMenu() {
+  VerticalOn();
   	menuElement.style.transform = "translateX(0)";
     menuElement.classList.add('menu--show');
     menuOverlayElement.classList.add('menu__overlay--show');
@@ -18,6 +26,7 @@
 
   //To hide menu
   function hideMenu() {
+  VerticalOff();
   	menuElement.style.transform = "translateX(-110%)";
     menuElement.classList.remove('menu--show');
     menuOverlayElement.classList.remove('menu__overlay--show');

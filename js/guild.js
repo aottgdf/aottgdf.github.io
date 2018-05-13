@@ -19,7 +19,7 @@ var GUIshop = document.getElementById('GUIshop');
 var Inventory = document.getElementById('Inventory');
 var GUIinventory = document.getElementById('GUIinventory');
 
-var myImage = ["./images/gacha/ulr.jpg"];
+/*var myImage = ["./images/gacha/ulr.jpg"];*/
 
 /*                           Method                           */
 /* Icon Collage */
@@ -35,7 +35,6 @@ function UseCoin(coins)
 	mycoin.value -= coins;
 	localStorage.setItem("mycoin", mycoin.value);
 }
-
 
 /* Open / Close */
 
@@ -114,9 +113,22 @@ window.onload = function() {
 		myprofile2.src = "./images/Chakung.png";
 		myprofile3.src = "./images/Chakung.png";
 	}
-	
+	setTimeout(function(){
+	document.body.style.overflow = "visible";
+	document.getElementById('loader').style.display = "none";},5000);
+	//alert("หน้านี้ประมวลผล " + ((Date.now()-timerStart)/1000) + " วินาที");
 }
 
+window.onscroll = function(){
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+    {
+        document.getElementsByTagName("header")[0].style.backgroundColor = "rgba(0,0,0,0.9)";
+    }
+    else
+    {
+        document.getElementsByTagName("header")[0].style.backgroundColor = "rgba(0,0,0,0.0)";
+    }
+}
 
 window.onclick = function(event){
     if (event.target == myModal) {
@@ -394,24 +406,36 @@ function setGuild(text)
 	return text;
 }
 //SLIDESHOW 
-var slideJRadio = document.getElementById('slideshow').querySelectorAll('input[type="radio"]'); 
+var slideIndex = 1;
+
+
+
+
+var slideJRadio = document.getElementsByTagName('span');
 var eSlide = 1; 
 var slideJTime; 
 
-function setSlideTime(){ 
-slideJTime = window.setInterval(function(){ if(eSlide === slideJRadio.length){ eSlide = 0; } slideJRadio[eSlide].checked = true; eSlide++;}, 4000); 
+function setSlideTime(){
+    if(eSlide > slideJRadio.length){
+       eSlide = 1;
+    }
+    
+    slideJRadio[eSlide].checked = false;
+    eSlide++;
+    slideJRadio[eSlide].checked = true;
+    setTimeout(setSlideTime, 2000);
 }
 
 setSlideTime();
-
+/*
 document.getElementById('slideshow').onmouseover = function(){
 window.clearInterval(slideJTime);
 }
 
 document.getElementById('slideshow').onmouseout = setSlideTime;
-
+*/
 for(var i = 0; i < slideJRadio.length; i++){
-slideJRadio[i].onclick=function(){ eSlide = this.id.match(/[0-9]+/) - 1;}
+//slideJRadio[i].onclick=function(){ eSlide = this.id;}
 }
 
 //Copy
