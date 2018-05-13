@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script>var timerStart = Date.now();</script>
     <meta charset="utf-8">
     <title>Dragon'sFaMiLy</title>
     <meta http-equiv=X-UA-Compatible content="IE=edge">
-    <meta name=description content="Dragon'sFaMiLy GUILD">
-    <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Dragon'sFaMiLy GUILD">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="theme-color" content="#3399ff">
     <meta name="msapplication-TileColor" content="#3399ff">
     <meta name="msapplication-TileImage" content="./images/icons/mstile-150x150.png">
@@ -23,13 +24,17 @@
     <link rel="icon" type="image/png" href="./images/icons/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="./images/icons/favicon-16x16.png" sizes="16x16">
     <!--<link rel="manifest" href="./manifest.json">-->
+    <link rel="stylesheet" href="./css/loader.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/guild.css">
 	<link rel="stylesheet" href="./css/font-awesome.css">
 	<link rel="stylesheet" href="./css/slide.css">
-	
+	<link rel="stylesheet" href="./css/iframe.css">
+	<style>
+	</style>
   </head>
   <body>
+  <div id="loader" align="center"><span class="img-loader"><img alt="Aottg Dragon'sFaMiLy" src="./images/icons/android-chrome-192x192.png?v=1"></span><p id="loading">Loading...</p></div>
 	<video autoplay="true" id="bgvideo" loop="" class="" data-spark-video="true" src="./media/video.mp4" type="video/mp4">
 		<!--<<source src="./media/video.mp4" type="video/mp4">-->
 		<!--<source src="../../Video/Nightcore%20Epic%20Gaming%20Mix%20[NEFFEX].mp4" type="video/mp4">-->
@@ -83,7 +88,7 @@
 			</center>
 			<ul class="social-icons">
 				<li class="showtext">
-					<a href="#rank" class="fa fa-user fa-2x" rel="clearbox[gallery=rank]">
+					<a href="#rank" class="fa fa-user fa-2x" id="linkRank">
 						<span>Rank</span>
 					</a>
 					<div class="showtext-div">
@@ -91,7 +96,7 @@
 					</div>
 				</li>
 				<li class="showtext">
-					<a href="#member" class="fa fa-group fa-2x" rel="clearbox[gallery=member]">
+					<a href="#member" class="fa fa-group fa-2x" id="linkMember">
 						<span>Member</span>
 					</a>
 					<div class="showtext-div">
@@ -99,7 +104,7 @@
 					</div>
 				</li>
 				<li class="showtext">
-					<a href="#message" class="fa fa-wechat fa-2x" rel="clearbox[gallery=message]">
+					<a href="#message" class="fa fa-wechat fa-2x" id="linkMessage">
 						<span>Message</span>
 					</a>
 					<div class="showtext-div">
@@ -107,7 +112,7 @@
 					</div>
 				</li>
 				<li class="showtext">
-					<a href="#timeline" class="fa fa-globe fa-2x" rel="clearbox[gallery=timeline]">
+					<a href="#timeline" class="fa fa-globe fa-2x" id="linkTimeline">
 						<span>Timeline</span>
 					</a>
 					<div class="showtext-div">
@@ -165,11 +170,11 @@
 						<td id="boxx3" class="ww" colspan="2" style="width: 503px;"> 
 							<div id="slideshow"> 
 							<!-- Radio --> 
-								<input checked="checked" type="radio" name="pan" id="pan1"> 
-								<input type="radio" name="pan" id="pan2"> 
-								<input type="radio" name="pan" id="pan3"> 
-								<input type="radio" name="pan" id="pan4"> 
-								<input type="radio" name="pan" id="pan5"> 
+								<span class="dot" id="pan1"></span>
+								<span class="dot" id="pan2"></span>
+								<span class="dot" id="pan3"></span>
+								<span class="dot" id="pan4"></span>
+								<span class="dot" id="pan5"></span>
 								<div id="slides"> 
 									<div id="mask"> 
 										<div class="slide_content"> 
@@ -206,8 +211,8 @@
 							</div> 
 						</td> 
 						<td class="ww boxx4" colspan="1" style="width: 394px;"> 
-							<a href="#" style="background-color: #cc181e; color: white"> 
-							กฏและกติกาที่ต้องปฏิบัติ 
+							<a id="linkRules" style="background-color: #cc181e; color: white"> 
+							<span>กฏและกติกาที่ต้องปฏิบัติ </span>
 							</a> 
 							<a href="#" style="background-color: #ff4400; color: white"> 
 							กิจกรรมหลัก 
@@ -235,7 +240,7 @@
 						<table> 
 							<tbody> 
 								<tr> 
-									<td> <a id="completibutton" href="https://www.facebook.com/aottgdf"> 
+									<td> <a id="completibutton" href="http://www.facebook.com/aottgdf"> 
 									Page <br>Dragon'sFaMiLy 
 									</a> </td> 
 									<td> <a id="incorsobutton" href="http://aotskins.com/"> 
@@ -272,13 +277,7 @@
 			<div class="homeblock-m">
 				
 				<div id="boxx3 slideshow" class="ww" align="center"> 
-				<!-- Radio -->
-					<input checked="checked" type="radio" name="pan" id="pan1"> 
-					<input type="radio" name="pan" id="pan2"> 
-					<input type="radio" name="pan" id="pan3"> 
-					<input type="radio" name="pan" id="pan4"> 
-					<input type="radio" name="pan" id="pan5">
-					<div id="slides"> 
+				    <div id="slides"> 
 						<div id="mask"> 
 							<div class="slide_content"> 
 								<div class="pannello" id="p1" style="background: url(./Image/h1.png); background-size: 594px 275px;"> 
@@ -327,42 +326,39 @@
 				</div>
 				
 				<div class="ww boxx4" style="width: 100%;" align="center"> 
-					<a href="#" style="background-color: #cc181e; color: white"> 
+					<a id="linkRulesM" style="background-color: #cc181e; color: white"> 
 					กฏและกติกาที่ต้องปฏิบัติ 
 					</a>
-					<a href="#" style="background-color: #ff4400; color: white"> 
+					<a id="linkEventM" style="background-color: #ff4400; color: white"> 
 					กิจกรรมหลัก 
 					</a> 
-					<a href="#" style="background-color: orange; color: white"> 
-					กิจกรรมรอง 
+					<a id="linkEventPM" style="background-color: orange; color: white"> 
+					กิจกรรมพิเศษ 
 					</a> 
-					<a href="#" style="background-color: green; color: white"> 
+					<a id="linkRankM" style="background-color: green; color: white"> 
 					จัดอันดับ 
 					</a> 
-					<a href="#" style="background-color: #066a5f; color: white"> 
+					<a id="linkUnitM" style="background-color: #066a5f; color: white"> 
 					หน่วยกิลด์ 
 					</a> 
-					<a href="#" style="background-color: #3a5795; color: white"> 
+					<a id="linkQandAM" style="background-color: #3a5795; color: white"> 
 					คำถามที่พบบ่อย 
 					</a> 
-					<a href="#" style="background-color: #a830d3; color: white"> 
+					<a id="linkPageM" style="background-color: #a830d3; color: white"> 
 					เยี่ยมชมแฟนเพจกิลด์ 
 					</a> 
 				</div>
 				<div class="ww boxx5" align="center">
-					<a id="completibutton" style="text-decoration:none;" href="https://www.facebook.com/aottgdf"> 
-						<button id="completibutton">Page <br>Dragon'sFaMiLy</button>
+					<a id="btnModM" style="text-decoration:none;"> 
+						<button id="btnModM">Mod <br>Dragon'sFaMiLy</button>
 					</a>
-					<a id="incorsobutton" style="text-decoration:none;" href="http://aotskins.com/"> 
+					<a id="incorsobutton" style="text-decoration:none;" href="https://www.aotskins.com/" target="_blank"> 
 						<button id="incorsobutton">AoTTG <br>AoT-Skin </button>
 					</a>
-					<a id="moviebutton" style="text-decoration:none;" href="http://www.youtube.com/c/friendrpgth"> 
+					<a id="moviebutton" style="text-decoration:none;" href="https://www.youtube.com/c/friendrpgth" target="_blank"> 
 						<button id="moviebutton">Channel <br>FriendRPG TV </button>
 					</a>
-				</div> 
-				<div class="ww boxx6"> 
-					<input type="submit" value="รับสมัครเข้ากิลด์ Dragon'sFaMiLy" class="tabellainput">
-				</div> 
+				</div>
 			</div>
 			
 			</div
@@ -587,9 +583,17 @@
 		</div>
 	</div>
   
-	<div style="height:20px;color:#fff;cursor: pointer;margin-bottom:5px;" align="center">© 2018 Dragon'sFaMiLy</div>
+	<div style="height:20px;color:#fff;cursor: pointer;margin-bottom:5px;" align="center">Copyright © 2018 Dragon'sFaMiLy.</div>
 
   <!-- Modal  -->
+  <div id="i-frame">
+      <span id="name-i"></span>
+      <span class="closei">×</span>
+      <div id="i-frame-content">
+      <iframe id="myFrame" style="width: 100%;height: 100%;"></iframe>
+      </div>
+  </div>
+  
 	<div id="myModal" class="modal">
 	  <span class="close">×</span>
 		<img class="modal-content" id="img01">
@@ -621,21 +625,22 @@
 		</div>
 	</div>
 	
-<iframe style="display:none;" src="https://discordapp.com/widget?id=315063715219243008&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+<!-- <iframe style="display:none;" src="https://discordapp.com/widget?id=315063715219243008&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe> -->
 
   <!-- JS Files  -->
 	<script src="./js/toast.js"></script>
 	<script src="./js/menu.js"></script>
 	<script src="./js/guild.js"></script>
 	<script src="./js/anime.js"></script>
-  
+    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/iframe.js"></script>
   <!-- JS Script  -->
 	<script>
 		document.body.style.backgroundImage = 'url(./images/bg.jpg)';
 		document.body.style.backgroundRepeat = 'no-repeat';
-		document.body.style.backgroundPosition = 'center';
+		document.body.style.backgroundPosition = 'top';
 		document.body.style.backgroundAttachment = 'fixed';
-		document.body.style.backgroundSize = 'cover';
+		document.body.style.backgroundSize = '100% cover';
 	</script>
 	
 	<script type="text/javascript">
