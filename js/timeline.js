@@ -28,10 +28,14 @@ function scrolling(){
 }
 var modal = document.getElementById('myModal');
 var img = document.getElementById('img01');
-document.getElementById('imgI').onclick = function(){
+var elms = document.querySelectorAll("[id='imgI']");
+
+for(var i = 0; i < elms.length; i++) {
+  elms[i].onclick = function(){
     modal.style.display = "block";
     img.src = this.src;
     document.body.style.overflow = "hidden";
+}
 }
 document.getElementsByClassName('close')[0].onclick = function(){
     modal.style.display = "none";
