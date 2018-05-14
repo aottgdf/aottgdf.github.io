@@ -32,9 +32,11 @@
       }
       
   }
-  var linkRules = document.getElementById('linkRulesM');
   
-  linkRules.onclick = function (){
+  var linkRules = document.querySelectorAll("[id='linkRulesM']");
+  
+for(var i = 0; i < linkRules.length; i++) {
+  linkRules[i].onclick = function (){
   frame.style.display = "block";
   myFrame.src = "rules.html";
   namei.innerHTML = "Rules";
@@ -43,10 +45,12 @@
   mscolor.setAttribute('content','#cc181e');
   setOverflow(true);
   }
+}
+
+  var linkEventM = document.querySelectorAll("[id='linkEventM']");
   
-  var linkEventM = document.getElementById('linkEventM');
-  
-  linkEventM.onclick = function (){
+for(var i = 0; i < linkEventM.length; i++) {
+  linkEventM[i].onclick = function (){
   frame.style.display = "block";
   myFrame.src = "404.html";
   namei.innerHTML = "Event";
@@ -55,10 +59,12 @@
   mscolor.setAttribute('content','#ff4400');
   setOverflow(true);
   }
+}
+
+  var linkEventPM = document.querySelectorAll("[id='linkEventPM']");
   
-  var linkEventPM = document.getElementById('linkEventPM');
-  
-  linkEventPM.onclick = function (){
+for(var i = 0; i < linkEventPM.length; i++) {
+  linkEventPM[i].onclick = function (){
   frame.style.display = "block";
   myFrame.src = "404.html";
   namei.innerHTML = "Event Special";
@@ -67,10 +73,12 @@
   mscolor.setAttribute('content','orange');
   setOverflow(true);
   }
+}
   
-  var linkLeaderM = document.getElementById('linkRankM');
+  var linkLeaderM = document.querySelectorAll("[id='linkRankM']");
   
-  linkLeaderM.onclick = function (){
+for(var i = 0; i < linkLeaderM.length; i++) {
+  linkLeaderM[i].onclick = function (){
   frame.style.display = "block";
   myFrame.src = "404.html";
   namei.innerHTML = "Leaderboard";
@@ -79,10 +87,12 @@
   mscolor.setAttribute('content','green');
   setOverflow(true);
   }
+}
   
-  var linkUnitM = document.getElementById('linkUnitM');
+  var linkUnitM = document.querySelectorAll("[id='linkUnitM']");
   
-  linkUnitM.onclick = function (){
+for(var i = 0; i < linkUnitM.length; i++) {
+  linkUnitM[i].onclick = function (){
   frame.style.display = "block";
   myFrame.src = "404.html";
   namei.innerHTML = "Guild Tags";
@@ -91,10 +101,12 @@
   mscolor.setAttribute('content','#066a5f');
   setOverflow(true);
   }
+}
   
-  var linkQandAM = document.getElementById('linkQandAM');
+  var linkQandAM = document.querySelectorAll("[id='linkQandAM']");
   
-  linkQandAM.onclick = function (){
+for(var i = 0; i < linkQandAM.length; i++) {
+  linkQandAM[i].onclick = function (){
   frame.style.display = "block";
   myFrame.src = "404.html";
   namei.innerHTML = "Q&A";
@@ -103,10 +115,12 @@
   mscolor.setAttribute('content','#3a5795');
   setOverflow(true);
   }
+}
   
-  var linkPageM = document.getElementById('linkPageM');
+  var linkPageM = document.querySelectorAll("[id='linkPageM']");
   
-  linkPageM.onclick = function (){
+for(var i = 0; i < linkPageM.length; i++) {
+  linkPageM[i].onclick = function (){
   frame.style.display = "block";
   myFrame.src = "https://www.facebook.com/aottgdf";
   namei.innerHTML = "Fanpage";
@@ -115,10 +129,12 @@
   mscolor.setAttribute('content','#a830d3');
   setOverflow(true);
   }
+}
   
-  var linkModM = document.getElementById('btnModM');
+  var linkModM = document.querySelectorAll("[id='btnModM']");
   
-  linkModM.onclick = function (){
+for(var i = 0; i < linkModM.length; i++) {
+  linkModM[i].onclick = function (){
   frame.style.display = "block";
   myFrame.src = "mod.html";
   namei.innerHTML = "Mod";
@@ -127,6 +143,7 @@
   mscolor.setAttribute('content','#3399ff');
   setOverflow(true);
   }
+}
   
   /* Menu */
   linkR.onclick = function (){

@@ -3,10 +3,13 @@ var botname = "Amadeus";
 var input = document.getElementById('input');
 var chat = document.getElementById('chat');
 var msg = document.getElementById('msg');
-input.addEventListener("keypress", Sent);
-function Sent(){
-    if (input.value == "" || input.value == " ") { return false }
-    Write(input.value);
+input.addEventListener("keypress", function(e){ Sent(e);});
+function Sent(e){
+	if(13 == e.keyCode)
+	{
+		if (input.value == "") { return false }
+		Write(input.value);
+	}
     
 }
 
@@ -28,7 +31,7 @@ function Write(line){
 }
 
 function Bot(str){
-    if (str.toUpperCase() == "HI")
+    if (str.toUpperCase() == "HI" || str.toUpperCase() == "HELLO" || str.toUpperCase() == "HEY")
     {
         BotWrite("Hi~");
     }
@@ -36,17 +39,21 @@ function Bot(str){
     {
         BotWrite("Yes?");
     }
-    else if (str == "ดี")
+    else if (str == "ดี" || str == "ดีครับ" || str == "ดีคับ")
     {
         BotWrite("ดีค่ะ");
     }
-    else if (str == "สวัสดี" || str == "สวัสดีครับ")
+    else if (str == "สวัสดี" || str == "สวัสดีครับ" || str == "สวัสดีคับ")
     {
         BotWrite("สวัสดีค่ะ");
     }
     else 
     {
-        //BotWrite("ขออภัยค่ะ ไม่เข้าใจที่พูดค่ะ");
+		if (str.toUpperCase().indexOf("AMADEUS") >= 0)
+		{
+			BotWrite("มีอะไรให้รับใช้คะ?");
+			//BotWrite("ขออภัยค่ะ ไม่เข้าใจที่พูดค่ะ");
+		}
     }
 }
 
@@ -58,24 +65,32 @@ function BotWrite(line){
     chat.appendChild(add);
 }
 
+var msgElms;
+
 function Command(str)
 {
+	var nocmd = str.indexOf("/") >= 0;
     if (str == "/clean")
     {
-        for (var i = 0; i < 1000*10; i++)
+		msgElms = document.querySelectorAll("[id='msg']");
+        for (var i = 0; i < msgElms.length; i++)
         {
-            document.getElementById('msg').remove();
+            msgElms[i].remove();
         }
         return "";
     }
     if (str == "/say")
     {
-        for (var i = 0; i < 20; i++)
+        for (var i = 0; i < 10; i++)
         {
             BotWrite("Nani!");
         }
         return "";
     }
+	if (nocmd)
+	{ 
+		return "" 
+	}
     return str;
 }
 

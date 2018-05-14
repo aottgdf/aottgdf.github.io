@@ -17,11 +17,12 @@ function Search(){
         }
     }
 }
-var Member = ["ChaKung","Kaito","MaGuMi","Silver Wolf","Nice","bankzaza","SoRA lillybryce25","Amadeus"];
+var Member = ["ChaKung","Kaito","MaGuMi","Silver Wolf","DeViLsPX_Of_Death","Nice","bankzaza","SoRA lillybryce25","Amadeus"];
 var Profile = ["./images/Chakung.png",
 "./images/P_kaito.jpg",
 "./images/P_may.jpg",
 "./images/P_boat.jpg",
+"./images/P_poom.jpg",
 "./images/P_nice.jpg",
 "./images/P_bank.jpg",
 "./images/P_sora.jpg",
@@ -31,6 +32,7 @@ var ListD = ["Nick(ชื่อเล่น): ชา<br>Age(อายุ): 18<br
 "Nick(ชื่อเล่น): ไคโตะ<br>Age(อายุ): 18<br>Gender(เพศ): ชาย<br>Joined: 2 May 2018",
 "Nick(ชื่อเล่น): เมย์<br>Age(อายุ): 18<br>Gender(เพศ): หญิง<br>Joined: N/A",
 "Nick(ชื่อเล่น): โบ๊ท<br>Age(อายุ): 16<br>Gender(เพศ): ชาย<br>Joined: N/A",
+"Nick(ชื่อเล่น): ภูมิ<br>Age(อายุ): 15<br>Gender(เพศ): ชาย<br>Joined: N/A",
 "Nick(ชื่อเล่น): ไนท์<br>Age(อายุ): 14<br>Gender(เพศ): ชาย<br>Joined: N/A",
 "Nick(ชื่อเล่น): แบงค์<br>Age(อายุ): 13<br>Gender(เพศ): ชาย<br>Joined: N/A",
 "Nick(ชื่อเล่น): กั๋วห่าว<br>Age(อายุ): 13<br>Gender(เพศ): ชาย<br>Joined: N/A",
