@@ -3,13 +3,14 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Mod DF | มอด กิลด์ DF</title>
 <link rel="stylesheet" href="./css/.css">
+<link rel="stylesheet" href="./css/scroll.css">
 <style>
 * {
     box-sizing: border-box;
 }
 body {
     background-image: url(./logo.png);
-    background-size: 100% 150px;
+    background-size: 100% 300px;
     background-repeat: no-repeat;
     background-position: top;
     background-color: #222;
@@ -20,7 +21,7 @@ body {
     scroll-behavior: smooth;
 }
 header { 
-    margin-top: 150px;
+    margin-top: 300px;
 }
 button {
     color: #3399ff;
@@ -54,6 +55,16 @@ button:focus {
 }
 .content {
 
+}
+
+@media only screen and (max-width: 700px){
+	body {
+		background-size: 100% 150px;
+	}
+	header {
+		margin-top: 150px;
+	}
+}
 }
 </style>
 </head>

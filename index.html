@@ -35,8 +35,8 @@
   </head>
   <body>
   <div id="loader" align="center"><span class="img-loader"><img alt="Aottg Dragon'sFaMiLy" src="./images/icons/android-chrome-192x192.png?v=1"></span><p id="loading">Loading...</p></div>
-	<video autoplay="true" id="bgvideo" loop="" class="" data-spark-video="true" src="./media/video.mp4" type="video/mp4">
-		<!--<<source src="./media/video.mp4" type="video/mp4">-->
+	<video id="bgvideo" loop class="" data-spark-video="true">
+		<source src="./media/video.mp4" type="video/mp4">
 		<!--<source src="../../Video/Nightcore%20Epic%20Gaming%20Mix%20[NEFFEX].mp4" type="video/mp4">-->
 		<!--<source src="../../Video/Nihon%20Animator%20Mihonichi%20Me!%20Me!%20Me!.mp4" type="video/mp4">-->
 	</video>
@@ -127,7 +127,7 @@
 		<div class="container">
 			<!--Start Guild Content-->
 			
-			<div class="logo" align="center"><img class="logo-size" src="logo.png" alt="AoTTG Dragon'sFaMiLy"></div>
+			<div class="logo" align="center"><img class="logo-size" src="logo.png?logo=1" alt="AoTTG Dragon'sFaMiLy"></div>
 			
 			<div id="homeblock">
 				
@@ -211,25 +211,25 @@
 							</div> 
 						</td> 
 						<td class="ww boxx4" colspan="1" style="width: 394px;"> 
-							<a id="linkRules" style="background-color: #cc181e; color: white"> 
+							<a id="linkRulesM" style="background-color: #cc181e; color: white; cursor: pointer">
 							<span>กฏและกติกาที่ต้องปฏิบัติ </span>
 							</a> 
-							<a href="#" style="background-color: #ff4400; color: white"> 
+							<a id="linkEventP" style="background-color: #ff4400; color: white; cursor: pointer">
 							กิจกรรมหลัก 
 							</a> 
-							<a href="#" style="background-color: orange; color: white"> 
+							<a id="linkEventPM" style="background-color: orange; color: white; cursor: pointer">
 							กิจกรรมรอง 
-							</a> 
-							<a href="#" style="background-color: green; color: white"> 
+							</a>
+							<a id="linkRankM" style="background-color: green; color: white; cursor: pointer">
 							จัดอันดับ 
 							</a> 
-							<a href="#" style="background-color: #066a5f; color: white"> 
+							<a id="linkUnitM" style="background-color: #066a5f; color: white; cursor: pointer">
 							หน่วยกิลด์ 
 							</a> 
-							<a href="#" style="background-color: #3a5795; color: white"> 
+							<a id="linkQandAM" style="background-color: #3a5795; color: white; cursor: pointer">
 							คำถามที่พบบ่อย 
 							</a> 
-							<a href="#" style="background-color: #a830d3; color: white"> 
+							<a id="linkPageM" style="background-color: #a830d3; color: white; cursor: pointer">
 							เยี่ยมชมแฟนเพจกิลด์ 
 							</a> 
 						</td> 
@@ -240,13 +240,13 @@
 						<table> 
 							<tbody> 
 								<tr> 
-									<td> <a id="completibutton" href="http://www.facebook.com/aottgdf"> 
+									<td> <a id="btnModM"> 
 									Page <br>Dragon'sFaMiLy 
 									</a> </td> 
-									<td> <a id="incorsobutton" href="http://aotskins.com/"> 
+									<td> <a id="incorsobutton" href="https://aotskins.com/" target="_blank"> 
 									AoTTG <br>AoT-Skin 
 									</a> </td> 
-									<td> <a id="moviebutton" href="http://www.youtube.com/c/friendrpgth"> 
+									<td> <a id="moviebutton" href="https://www.youtube.com/c/friendrpgth" target="_blank"> 
 									Channel <br>FriendRPG TV 
 									</a> </td> 
 								</tr> 
@@ -257,13 +257,13 @@
 		 
 					<tr> 
 						<td class="ww boxx6" colspan="3"> 
-							<input type="submit" value="[Open] รับสมัครเข้ากิลด์ Dragon'sFaMiLy" class="tabellainput">
+							<input type="submit" value="สมัครเข้ากิลด์ Dragon'sFaMiLy" class="tabellainput">
 						</td> 
 					</tr> 
 					 
 					<tr> 
 						<td class="ww boxx6" colspan="3"> 
-							<iframe src="http://www.bakaradio.net/musicbox/anime/radio.php?anime=4" width="960" height="200" frameborder="0" scrolling="no"></iframe> 
+							<!--<iframe src="http://www.bakaradio.net/musicbox/anime/radio.php?anime=4" width="960" height="200" frameborder="0" scrolling="no"></iframe>-->
 					</td> 
 					</tr> 
 				</tbody> 
@@ -349,7 +349,7 @@
 					</a> 
 				</div>
 				<div class="ww boxx5" align="center">
-					<a id="btnModM" style="text-decoration:none;"> 
+					<a id="completibutton" style="text-decoration:none;"> 
 						<button id="btnModM">Mod <br>Dragon'sFaMiLy</button>
 					</a>
 					<a id="incorsobutton" style="text-decoration:none;" href="https://www.aotskins.com/" target="_blank"> 
@@ -667,6 +667,7 @@
 	    pauseButton.innerHTML = "Play";
 	  }
 	})
+	setTimeout(function(){vid.play();},6000);
 	</script>
   </body>
 </html>
