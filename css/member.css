@@ -34,7 +34,8 @@ body {
     text-decoration: none;
     font-size: 18px;
     color: black;
-    display: block
+    display: block;
+    cursor: pointer;
 }
 #ulS li a:hover:not(.header){
     background-color: #eee;
@@ -60,7 +61,7 @@ body {
     background-repeat: no-repeat;
     margin: auto;
     display: block;
-    width: 80%;
+    width: 20%;
     color: black;
     border: 1px solid #ddd;
     background-color: rgba(255, 255, 255, 1);
@@ -95,4 +96,11 @@ body {
 }
 #data {
     margin: 10px 20px auto;
+}
+
+/* Smaller Screens */
+@media only screen and (max-width: 1125px){
+    .modal-content {
+        width: 80%;
+    }
 }

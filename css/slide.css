@@ -53,20 +53,21 @@ border-radius: 0 13px 0 13px}
 .tabbella .boxx2 div.esterno {height: 275px; 
 width: 578px; 
 border: 2px solid #6B93F2; 
-background: url(http://i.imgur.com/6Jeo42k.png) repeat; 
+background: url('../images/box.png') repeat; 
+background-size: 574px 300px;
 overflow: hidden; 
 position: relative} 
  
 .tabbella .boxx2 div.interno {position: absolute; 
 top: 0; 
-background: url('http://i.imgur.com/4dr1uwy.png') no-repeat; 
+background: url('../images/enter.png') no-repeat; 
 background-position: 0; 
 height: 275px; 
 width: 578px; 
 -webkit-transition: background-position 0.6s ease-in-out, background-image 0.3s ease-in-out; /* For Safari 3.1 to 6.0 */ 
  transition: background-position 0.6s ease-in-out, background-image 0.3s ease-in-out} 
  
-/* render della tabella */ 
+/* avatar */ 
 .chakung {background: url('http://i.imgur.com/CkxqeKt.png') no-repeat !important; 
 background-size: auto; 
 background-position: -318px 0 !important} 
@@ -166,17 +167,17 @@ font-size: 25px;
  .tabbella .boxx5 table td {padding-left: 3px; padding-right: 3px; width: 33%} 
  
 #incorsobutton {background-color: #FFA100; 
-background-image: url('http://i.imgur.com/x3bujDv.png'); 
+background-image: url('../images/aotskins.png'); 
 background-position: right bottom; 
 background-repeat: no-repeat} 
  
-#completibutton {background-color: #67D9FF; 
-background-image: url('./Image/b2.png'); 
+#btnModM {background-color: #67D9FF; 
+background-image: url('../images/mod.png'); 
 background-position: right bottom; 
 background-repeat: no-repeat} 
  
 #moviebutton {background-color: #FF0091; 
-background-image: url('http://i.imgur.com/UsQygdq.png'); 
+background-image: url('../images/friendrpgtv.png'); 
 background-position: right bottom; 
 background-repeat: no-repeat} 
  
