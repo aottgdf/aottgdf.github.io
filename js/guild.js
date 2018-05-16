@@ -115,7 +115,8 @@ window.onload = function() {
 	}
 	setTimeout(function(){
 	document.body.style.overflow = "visible";
-	document.getElementById('loader').style.display = "none";},5000);
+	document.getElementById('loader').style.display = "none";
+	},5000);
 	//alert("หน้านี้ประมวลผล " + ((Date.now()-timerStart)/1000) + " วินาที");
 }
 

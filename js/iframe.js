@@ -108,7 +108,7 @@ for(var i = 0; i < linkUnitM.length; i++) {
 for(var i = 0; i < linkQandAM.length; i++) {
   linkQandAM[i].onclick = function (){
   frame.style.display = "block";
-  myFrame.src = "404.html";
+  myFrame.src = "qan.html";
   namei.innerHTML = "Q&A";
   frame.style.backgroundColor = "#3a5795";
   themecolor.setAttribute('content','#3a5795');
