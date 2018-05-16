@@ -29,7 +29,7 @@ body {
 }
 .top {
     height: 240px;
-    background: linear-gradient(to bottom, #cc181c 0%, #222 90%);
+    background: linear-gradient(to bottom, #3a5795 0%, #222 90%);
 }
 .profile {
     position: relative;
@@ -69,7 +69,7 @@ name {
     font-weight: bold;
 }
 c {
-	color: #cc181c;
+	color: #3a5795;
     font-weight: bold;
 }
 ht {
@@ -141,12 +141,15 @@ ht {
 	}
 	HTML::-webkit-scrollbar-thumb
 	{
-		background-color: #cc181c;	
+		background-color: #3a5795;	
 		background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent)
 	}
 }
 @media screen and (max-width: 600px){
 	.top {
 		height: 150px;
+	}
+	.img {
+		height: 200px;
 	}
 }
