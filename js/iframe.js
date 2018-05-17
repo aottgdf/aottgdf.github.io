@@ -94,7 +94,7 @@ for(var i = 0; i < linkLeaderM.length; i++) {
 for(var i = 0; i < linkUnitM.length; i++) {
   linkUnitM[i].onclick = function (){
   frame.style.display = "block";
-  myFrame.src = "404.html";
+  myFrame.src = "guild.html";
   namei.innerHTML = "Guild Tags";
   frame.style.backgroundColor = "#066a5f";
   themecolor.setAttribute('content','#066a5f');
@@ -122,7 +122,7 @@ for(var i = 0; i < linkQandAM.length; i++) {
 for(var i = 0; i < linkPageM.length; i++) {
   linkPageM[i].onclick = function (){
   frame.style.display = "block";
-  myFrame.src = "https://www.facebook.com/aottgdf";
+  myFrame.src = "fanpage.html";
   namei.innerHTML = "Fanpage";
   frame.style.backgroundColor = "#a830d3";
   themecolor.setAttribute('content','#a830d3');
@@ -148,8 +148,8 @@ for(var i = 0; i < linkModM.length; i++) {
   /* Menu */
   linkR.onclick = function (){
       frame.style.display = "block";
-      myFrame.src = "rank.html";
-      namei.innerHTML = "Rank";
+      myFrame.src = "profile.html";
+      namei.innerHTML = "Profile";
       themecolor.setAttribute('content','#ffffff');
       mscolor.setAttribute('content','#ffffff');
   }

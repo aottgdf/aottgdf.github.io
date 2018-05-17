@@ -60,9 +60,9 @@ gachaimg.style.transform = "rotateY(0deg)";
 }
 
 /*-------------------------------------localStorage-------------------------------------*/
-var localName = localStorage.getItem('myname');
-var localGuild = localStorage.getItem('myguild');
-var localProfile = localStorage.getItem('myprofile');
+var localName;
+var localGuild;
+var localProfile;
 /*-------------------------------------localStorage-------------------------------------*/
 var myname = document.getElementById('name');
 var myguild = document.getElementById('guild');
@@ -73,6 +73,9 @@ var myprofile2 = document.getElementById('myprofile2');
 var myprofile3 = document.getElementById('myprofile3');
 /*--------------------------------------------------------------------Event--------------------------------------------------------------------*/
 window.onload = function() {
+    localName = localStorage.getItem('myname');
+    localGuild = localStorage.getItem('myguild');
+    localProfile = localStorage.getItem('myprofile');
 	if (localName != null)
 	{
 		myname.innerHTML = localName;
@@ -130,6 +133,47 @@ window.onscroll = function(){
         document.getElementsByTagName("header")[0].style.backgroundColor = "rgba(0,0,0,0.0)";
     }
 }
+
+document.onkeydown = function (event)
+{
+     event = (event || window.event);
+     if (event.keyCode == 123 || event.keyCode == 18)
+     {
+           alert("This function is disabled here");
+           return false;
+     }
+}
+
+var message="Ohh No!!!!";
+function clickIE4()
+{
+	if (event.button==2)
+	{
+		alert(message);
+		return false;
+	}
+}
+function clickNS4(e)
+{
+	if (document.layers||document.getElementById&&!document.all)
+	{
+		if (e.which==2||e.which==3)
+		{
+			alert(message);
+			return false;
+		}
+	}
+}
+if(document.layers)
+{
+	document.captureEvents(Event.MOUSEDOWN);
+	document.onmousedown = function(event){clickNS4(event);}
+}
+else if(document.all&&!document.getElementById)
+{
+	document.onmousedown = function(){clickIE4();}
+}
+document.oncontextmenu = function(){alert(message);return false;}
 
 window.onclick = function(event){
     if (event.target == myModal) {
@@ -406,7 +450,8 @@ function setGuild(text)
 	}
 	return text;
 }
-//SLIDESHOW 
+//SLIDESHOW
+/*
 var slideIndex = 1;
 
 
@@ -428,6 +473,7 @@ function setSlideTime(){
 }
 
 setSlideTime();
+*/
 /*
 document.getElementById('slideshow').onmouseover = function(){
 window.clearInterval(slideJTime);
@@ -435,9 +481,9 @@ window.clearInterval(slideJTime);
 
 document.getElementById('slideshow').onmouseout = setSlideTime;
 */
-for(var i = 0; i < slideJRadio.length; i++){
+//for(var i = 0; i < slideJRadio.length; i++){
 //slideJRadio[i].onclick=function(){ eSlide = this.id;}
-}
+//}
 
 //Copy
 
