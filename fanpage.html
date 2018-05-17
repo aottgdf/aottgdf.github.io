@@ -6,7 +6,6 @@ var height = screen.height;
 </script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Facebook Aottg DF | เยี่ยมชมแฟนเพจของเรา</title>
-<meta property="fb:app_id" content="202995930318578" />
 <style>
 body {
     top: 0;
@@ -15,7 +14,6 @@ body {
 }
 #connect_widget {
     position: absolute;
-    background-color: transparent !important;
     border: none !important;
     width: 100% !important;
     height: 100% !important;
@@ -32,7 +30,7 @@ body {
 <script>
 window.onload = function(){
 var fb = document.getElementById('connect_widget');
-var url = "http://www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/aottgdf&tabs=timeline,messages&width=" + width + "&height=" + height + "&colorscheme=dark&show_faces=true&header=false&stream=false&show_border=false&appId";
+var url = "http://www.facebook.com/plugins/page.php?href=https://www.facebook.com/aottgdf&tabs=timeline,messages&width=" + width + "&height=" + height + "&colorscheme=dark&show_faces=true&header=false&stream=false&show_border=false&appId";
 fb.src = url;
 }
 </script>
