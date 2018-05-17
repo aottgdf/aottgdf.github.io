@@ -26,11 +26,13 @@
 	<meta property="og:title" content="AoTTG Dragon'sFaMiLy GUILD"/>
 	<meta property="og:description" content="Dragon'sFaMiLy GUILD กิลด์ครอบครัวมังกร (ตระกูลแห่งมังกร)"/>
 	<meta property="og:image" content="http://aottgdf.github.io/intro.png"/>
-	<META name="generator" content="Notepad++ , anWritter">
+	<meta name="generator" content="Notepad++ , anWritter">
+	<meta property="fb:app_id" content="202995930318578" />
     <link rel="apple-touch-icon" href="./images/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="./images/icons/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="./images/icons/favicon-16x16.png" sizes="16x16">
     <!--<link rel="manifest" href="./manifest.json">-->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="./css/loader.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/guild.css">
@@ -38,6 +40,11 @@
 	<link rel="stylesheet" href="./css/slide.css">
 	<link rel="stylesheet" href="./css/iframe.css">
 	<style>
+	body {
+	font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	}
 	</style>
   </head>
   <body>
@@ -100,11 +107,11 @@
 			</center>
 			<ul class="social-icons">
 				<li class="showtext">
-					<a href="#rank" class="fa fa-user fa-2x" id="linkRank">
-						<span>Rank</span>
+					<a href="#profile" class="fa fa-user fa-2x" id="linkRank">
+						<span>Profile</span>
 					</a>
 					<div class="showtext-div">
-						<div class="captext">แรงค์</div>
+						<div class="captext">โปรไฟล์</div>
 					</div>
 				</li>
 				<li class="showtext">
@@ -681,6 +688,28 @@
 	    pauseButton.innerHTML = "Play";
 	  }
 	})
+	</script>
+	
+	<script>
+	window.fbAsyncInit = function() {
+	FB.init({
+	appId      : '202995930318578',
+	cookie     : true,
+	xfbml      : true,
+	version    : 'v3.0'
+	});
+	
+	FB.AppEvents.logPageView();   
+	
+	};
+	
+	(function(d, s, id){
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) {return;}
+	js = d.createElement(s); js.id = id;
+	js.src = "https://connect.facebook.net/en_US/sdk.js";
+	fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
 	</script>
   </body>
 </html>
