@@ -28,24 +28,7 @@ body {
 <body>
 <iframe id="connect_widget" allowTransparency="true"></iframe>
 <div style="height: 56px"></div>
-<div id="fb-root"></div>
-<script>
-window.fbAsyncInit = function() {
-    FB.init({
-      appId            : '202995930318578',
-      autoLogAppEvents : true,
-      xfbml            : true,
-      version          : 'v3.0'
-    });
-  };
-  (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v2.10&appId=202995930318578";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-</script>
+
 <script>
 window.onload = function(){
 var fb = document.getElementById('connect_widget');
