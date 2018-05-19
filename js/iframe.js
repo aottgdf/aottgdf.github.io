@@ -52,7 +52,7 @@ for(var i = 0; i < linkRules.length; i++) {
 for(var i = 0; i < linkEventM.length; i++) {
   linkEventM[i].onclick = function (){
   frame.style.display = "block";
-  myFrame.src = "404.html";
+  myFrame.src = "event.html";
   namei.innerHTML = "Event";
   frame.style.backgroundColor = "#ff4400";
   themecolor.setAttribute('content','#ff4400');
@@ -66,7 +66,7 @@ for(var i = 0; i < linkEventM.length; i++) {
 for(var i = 0; i < linkEventPM.length; i++) {
   linkEventPM[i].onclick = function (){
   frame.style.display = "block";
-  myFrame.src = "404.html";
+  myFrame.src = "events.html";
   namei.innerHTML = "Event Special";
   frame.style.backgroundColor = "orange";
   themecolor.setAttribute('content','orange');
@@ -80,7 +80,7 @@ for(var i = 0; i < linkEventPM.length; i++) {
 for(var i = 0; i < linkLeaderM.length; i++) {
   linkLeaderM[i].onclick = function (){
   frame.style.display = "block";
-  myFrame.src = "404.html";
+  myFrame.src = "leaderboard.html";
   namei.innerHTML = "Leaderboard";
   frame.style.backgroundColor = "green";
   themecolor.setAttribute('content','green');
