@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Facebook | เยี่ยมชมแฟนเพจของเรา</title>
+<style>
+body {
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+#connect_widget {
+    position: absolute;
+    border: none !important;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+    margin-bottom: 56px;
+}
+</style>
+</head>
+<body>
+<iframe id="connect_widget" src="http://www.facebook.com/plugins/page.php?href=https://www.facebook.com/aottgdf&tabs=timeline,messages&width=320&height=450&colorscheme=dark&show_faces=true&header=false&stream=false&show_border=false"></iframe>
+<div style="height: 56px"></div>
+<script>
+var width = screen.width;
+var height = screen.height;
+window.onload = function(){
+var fb = document.getElementById('connect_widget');
+var url = "http://www.facebook.com/plugins/page.php?href=https://www.facebook.com/aottgdf&tabs=timeline,messages&width=" + width + "&height=" + height + "&colorscheme=dark&show_faces=true&header=false&stream=false&show_border=false";
+fb.src = url;
+}
+</script>
+</body>
+</html>
