@@ -11,12 +11,16 @@ var colorp = document.getElementById('colorp');
 var fcolor = document.getElementById('color');
 var fcolor2 = document.getElementById('color2');
 var fcolor3 = document.getElementById('color3');
+var fcolor4 = document.getElementById('color4');
+var fcolor5 = document.getElementById('color5');
+var fcolor6 = document.getElementById('color6');
+var fcolor7 = document.getElementById('color7');
 var count = document.getElementById('count');
 var plus = document.getElementById('plus');
 var minus = document.getElementById('minus');
 var intfade = 1;
 plus.onclick = function(){
-   if (intfade < 3)
+   if (intfade < 7)
        intfade++;
        
    count.innerHTML = "Fade Color: " + intfade;
@@ -24,16 +28,64 @@ plus.onclick = function(){
    {
        fcolor2.style.display = "none";
        fcolor3.style.display = "none";
+       fcolor4.style.display = "none";
+       fcolor5.style.display = "none";
+       fcolor6.style.display = "none";
+       fcolor7.style.display = "none";
    }
    if (intfade == 2)
    {
        fcolor2.style.display = "block";
        fcolor3.style.display = "none";
+       fcolor4.style.display = "none";
+       fcolor5.style.display = "none";
+       fcolor6.style.display = "none";
+       fcolor7.style.display = "none";
    }
    if (intfade == 3)
    {
        fcolor2.style.display = "block";
        fcolor3.style.display = "block";
+       fcolor4.style.display = "none";
+       fcolor5.style.display = "none";
+       fcolor6.style.display = "none";
+       fcolor7.style.display = "none";
+   }
+   if (intfade == 4)
+   {
+       fcolor2.style.display = "block";
+       fcolor3.style.display = "block";
+       fcolor4.style.display = "block";
+       fcolor5.style.display = "none";
+       fcolor6.style.display = "none";
+       fcolor7.style.display = "none";
+   }
+   if (intfade == 5)
+   {
+       fcolor2.style.display = "block";
+       fcolor3.style.display = "block";
+       fcolor4.style.display = "block";
+       fcolor5.style.display = "block";
+       fcolor6.style.display = "none";
+       fcolor7.style.display = "none";
+   }
+   if (intfade == 6)
+   {
+       fcolor2.style.display = "block";
+       fcolor3.style.display = "block";
+       fcolor4.style.display = "block";
+       fcolor5.style.display = "block";
+       fcolor6.style.display = "block";
+       fcolor7.style.display = "none";
+   }
+   if (intfade == 7)
+   {
+       fcolor2.style.display = "block";
+       fcolor3.style.display = "block";
+       fcolor4.style.display = "block";
+       fcolor5.style.display = "block";
+       fcolor6.style.display = "block";
+       fcolor7.style.display = "block";
    }
 }
 minus.onclick = function(){
@@ -45,16 +97,64 @@ minus.onclick = function(){
    {
        fcolor2.style.display = "none";
        fcolor3.style.display = "none";
+       fcolor4.style.display = "none";
+       fcolor5.style.display = "none";
+       fcolor6.style.display = "none";
+       fcolor7.style.display = "none";
    }
    if (intfade == 2)
    {
        fcolor2.style.display = "block";
        fcolor3.style.display = "none";
+       fcolor4.style.display = "none";
+       fcolor5.style.display = "none";
+       fcolor6.style.display = "none";
+       fcolor7.style.display = "none";
    }
    if (intfade == 3)
    {
        fcolor2.style.display = "block";
        fcolor3.style.display = "block";
+       fcolor4.style.display = "none";
+       fcolor5.style.display = "none";
+       fcolor6.style.display = "none";
+       fcolor7.style.display = "none";
+   }
+   if (intfade == 4)
+   {
+       fcolor2.style.display = "block";
+       fcolor3.style.display = "block";
+       fcolor4.style.display = "block";
+       fcolor5.style.display = "none";
+       fcolor6.style.display = "none";
+       fcolor7.style.display = "none";
+   }
+   if (intfade == 5)
+   {
+       fcolor2.style.display = "block";
+       fcolor3.style.display = "block";
+       fcolor4.style.display = "block";
+       fcolor5.style.display = "block";
+       fcolor6.style.display = "none";
+       fcolor7.style.display = "none";
+   }
+   if (intfade == 6)
+   {
+       fcolor2.style.display = "block";
+       fcolor3.style.display = "block";
+       fcolor4.style.display = "block";
+       fcolor5.style.display = "block";
+       fcolor6.style.display = "block";
+       fcolor7.style.display = "none";
+   }
+   if (intfade == 7)
+   {
+       fcolor2.style.display = "block";
+       fcolor3.style.display = "block";
+       fcolor4.style.display = "block";
+       fcolor5.style.display = "block";
+       fcolor6.style.display = "block";
+       fcolor7.style.display = "block";
    }
 }
 btn1.onclick = function(){
@@ -184,18 +284,25 @@ function color(c){
     typing(inputfade.value);
 }
 
+var fadercolor = document.getElementById('chosen-value');
+var fadercolor2 = document.getElementById('chosen-value2');
+var fadercolor3 = document.getElementById('chosen-value3');
+var fadercolor4 = document.getElementById('chosen-value4');
+var fadercolor5 = document.getElementById('chosen-value5');
+var fadercolor6 = document.getElementById('chosen-value6');
+var fadercolor7 = document.getElementById('chosen-value7');
 function Converter(str){
     if (intfade == 1)
     {
-        convert.value = "[" + fcolor.value.replace("#","").toUpperCase() + "]" + str;
-        convert2.value = "<color=" + fcolor.value.toUpperCase() + ">" + str + "</color>";
+        convert.value = "[" + fadercolor.value.replace("#","").toUpperCase() + "]" + str;
+        convert2.value = "<color=" + fadercolor.value.toUpperCase() + ">" + str + "</color>";
     }
     else if (intfade == 2)
     {
         var input = isinput;
         var inputlength = input.value.length;
-        var startcolor = fcolor.value;
-        var endcolor = fcolor2.value;
+        var startcolor = "#"+fadercolor.value;
+        var endcolor = "#"+fadercolor2.value;
         var myStringArray = gradient(startcolor,endcolor,inputlength - 1);
         var arrayLength = myStringArray.length;
         var inner1 = "",inner2 = "",inner3 = "";
@@ -212,43 +319,182 @@ function Converter(str){
         convert2.value = inner2;
         result.innerHTML = inner3;
     }
-    else
+    else if (intfade == 3)
     {
-        convert.value = "null รออัพเดท";
-        convert2.value = "null รออัพเดท";
-        
+        var input = isinput;
+        var fadercolors = ["#"+fadercolor.value, "#"+fadercolor2.value, "#"+fadercolor3.value];
+		var inner1 = TextFader.fade({
+			colors: fadercolors,
+			txt: input.value,
+			type: 'horizontal',
+			output: 'tag'
+		});
+		for (var r = 0; r < inner1.length; r++)
+		{
+			if (inner1.indexOf('#'))
+				inner1 = inner1.replace("#","");
+		}
+		convert.value = inner1;
+		convert2.value = TextFader.fade({
+			colors: fadercolors,
+			txt: input.value,
+			type: 'horizontal',
+			output: 'chat'
+		});
+		result.innerHTML = TextFader.fade({
+			colors: fadercolors,
+			txt: input.value,
+			type: 'horizontal',
+			output: 'html-font'
+		});
+    }
+    else if (intfade == 4)
+    {
+        var input = isinput;
+        var fadercolors = ["#"+fadercolor.value, "#"+fadercolor2.value, "#"+fadercolor3.value, "#"+fadercolor4.value];
+		var inner1 = TextFader.fade({
+			colors: fadercolors,
+			txt: input.value,
+			type: 'horizontal',
+			output: 'tag'
+		});
+		for (var r = 0; r < inner1.length; r++)
+		{
+			if (inner1.indexOf('#'))
+				inner1 = inner1.replace("#","");
+		}
+		convert.value = inner1;
+		convert2.value = TextFader.fade({
+			colors: fadercolors,
+			txt: input.value,
+			type: 'horizontal',
+			output: 'chat'
+		});
+		result.innerHTML = TextFader.fade({
+			colors: fadercolors,
+			txt: input.value,
+			type: 'horizontal',
+			output: 'html-font'
+		});
+    }
+    else if (intfade == 5)
+    {
+        var input = isinput;
+        var fadercolors = ["#"+fadercolor.value, "#"+fadercolor2.value, "#"+fadercolor3.value, "#"+fadercolor4.value, "#"+fadercolor5.value];
+		var inner1 = TextFader.fade({
+			colors: fadercolors,
+			txt: input.value,
+			type: 'horizontal',
+			output: 'tag'
+		});
+		for (var r = 0; r < inner1.length; r++)
+		{
+			if (inner1.indexOf('#'))
+				inner1 = inner1.replace("#","");
+		}
+		convert.value = inner1;
+		convert2.value = TextFader.fade({
+			colors: fadercolors,
+			txt: input.value,
+			type: 'horizontal',
+			output: 'chat'
+		});
+		result.innerHTML = TextFader.fade({
+			colors: fadercolors,
+			txt: input.value,
+			type: 'horizontal',
+			output: 'html-font'
+		});
+    }
+    else if (intfade == 6)
+    {
+        var input = isinput;
+        var fadercolors = ["#"+fadercolor.value, "#"+fadercolor2.value, "#"+fadercolor3.value, "#"+fadercolor4.value, "#"+fadercolor5.value, "#"+fadercolor6.value];
+		var inner1 = TextFader.fade({
+			colors: fadercolors,
+			txt: input.value,
+			type: 'horizontal',
+			output: 'tag'
+		});
+		for (var r = 0; r < inner1.length; r++)
+		{
+			if (inner1.indexOf('#'))
+				inner1 = inner1.replace("#","");
+		}
+		convert.value = inner1;
+		convert2.value = TextFader.fade({
+			colors: fadercolors,
+			txt: input.value,
+			type: 'horizontal',
+			output: 'chat'
+		});
+		result.innerHTML = TextFader.fade({
+			colors: fadercolors,
+			txt: input.value,
+			type: 'horizontal',
+			output: 'html-font'
+		});
+    }
+    else if (intfade == 7)
+    {
+        var input = isinput;
+        var fadercolors = ["#"+fadercolor.value, "#"+fadercolor2.value, "#"+fadercolor3.value, "#"+fadercolor4.value, "#"+fadercolor5.value, "#"+fadercolor6.value, "#"+fadercolor7.value];
+		var inner1 = TextFader.fade({
+			colors: fadercolors,
+			txt: input.value,
+			type: 'horizontal',
+			output: 'tag'
+		});
+		for (var r = 0; r < inner1.length; r++)
+		{
+			if (inner1.indexOf('#'))
+				inner1 = inner1.replace("#","");
+		}
+		convert.value = inner1;
+		convert2.value = TextFader.fade({
+			colors: fadercolors,
+			txt: input.value,
+			type: 'horizontal',
+			output: 'chat'
+		});
+		result.innerHTML = TextFader.fade({
+			colors: fadercolors,
+			txt: input.value,
+			type: 'horizontal',
+			output: 'html-font'
+		});
     }
 }
 
 function gradient(startColor, endColor, steps) {
-             var start = {
-                     'Hex'   : startColor,
-                     'R'     : parseInt(startColor.slice(1,3), 16),
-                     'G'     : parseInt(startColor.slice(3,5), 16),
-                     'B'     : parseInt(startColor.slice(5,7), 16)
-             }
-             var end = {
-                     'Hex'   : endColor,
-                     'R'     : parseInt(endColor.slice(1,3), 16),
-                     'G'     : parseInt(endColor.slice(3,5), 16),
-                     'B'     : parseInt(endColor.slice(5,7), 16)
-             }
-             diffR = end['R'] - start['R'];
-             diffG = end['G'] - start['G'];
-             diffB = end['B'] - start['B'];
+	 var start = {
+			 'Hex'   : startColor,
+			 'R'     : parseInt(startColor.slice(1,3), 16),
+			 'G'     : parseInt(startColor.slice(3,5), 16),
+			 'B'     : parseInt(startColor.slice(5,7), 16)
+	 }
+	 var end = {
+			 'Hex'   : endColor,
+			 'R'     : parseInt(endColor.slice(1,3), 16),
+			 'G'     : parseInt(endColor.slice(3,5), 16),
+			 'B'     : parseInt(endColor.slice(5,7), 16)
+	 }
+	 diffR = end['R'] - start['R'];
+	 diffG = end['G'] - start['G'];
+	 diffB = end['B'] - start['B'];
 
-             stepsHex  = new Array();
-             stepsR    = new Array();
-             stepsG    = new Array();
-             stepsB    = new Array();
+	 stepsHex  = new Array();
+	 stepsR    = new Array();
+	 stepsG    = new Array();
+	 stepsB    = new Array();
 
-             for(var i = 0; i <= steps; i++) {
-                     stepsR[i] = start['R'] + ((diffR / steps) * i);
-                     stepsG[i] = start['G'] + ((diffG / steps) * i);
-                     stepsB[i] = start['B'] + ((diffB / steps) * i);
-                     stepsHex[i] = hex6digit(Math.round(stepsR[i]).toString(16)) + '' + hex6digit(Math.round(stepsG[i]).toString(16)) + '' + hex6digit(Math.round(stepsB[i]).toString(16));
-             }
-             return stepsHex;
+	 for(var i = 0; i <= steps; i++) {
+			 stepsR[i] = start['R'] + ((diffR / steps) * i);
+			 stepsG[i] = start['G'] + ((diffG / steps) * i);
+			 stepsB[i] = start['B'] + ((diffB / steps) * i);
+			 stepsHex[i] = hex6digit(Math.round(stepsR[i]).toString(16)) + '' + hex6digit(Math.round(stepsG[i]).toString(16)) + '' + hex6digit(Math.round(stepsB[i]).toString(16));
+	 }
+	 return stepsHex;
 }
 
 function hex6digit(str) {
