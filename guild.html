@@ -9,7 +9,7 @@
 </head>
 <body>
 <div align="center">
-
+<script src="./js/jscolor.js"></script>
     <div class="menu">
         <ul>
             <li id="btn1" style="background-color:#3399ff"></li>
@@ -73,9 +73,61 @@
                         <button id="plus">+</button><button id="minus">-</button>
                     </div>
                     <br>
-                    <input id="color" type="color" name="color" onchange="color(this.value)"/>
-                    <input id="color2" type="color" name="color" onchange="color(this.value)"/>
-                    <input id="color3" type="color" name="color" onchange="color(this.value)"/>
+                    <div id="color">
+						<button class="jscolor {valueElement:'chosen-value', onFineChange:'setTextColor(this)'}">
+							Color 1
+						</button>
+						
+						HEX value: <input id="chosen-value" onchange="color(this.value)" value="000000">
+                    </div>
+                    
+                    <div id="color2">
+						<button class="jscolor {valueElement:'chosen-value2', onFineChange:'setTextColor(this)'}">
+							Color 2
+						</button>
+						
+						HEX value: <input id="chosen-value2" onchange="color(this.value)"  value="000000">
+                    </div>
+                    
+                    <div id="color3">
+						<button class="jscolor {valueElement:'chosen-value3', onFineChange:'setTextColor(this)'}">
+							Color 3
+						</button>
+						
+						HEX value: <input id="chosen-value3" onchange="color(this.value)" value="000000">
+                    </div>
+                    
+                    <div id="color4">
+						<button class="jscolor {valueElement:'chosen-value4', onFineChange:'setTextColor(this)'}">
+							Color 4
+						</button>
+						
+						HEX value: <input id="chosen-value4" onchange="color(this.value)" value="000000">
+                    </div>
+                    
+                    <div id="color5">
+						<button class="jscolor {valueElement:'chosen-value5', onFineChange:'setTextColor(this)'}">
+							Color 5
+						</button>
+						
+						HEX value: <input id="chosen-value5" onchange="color(this.value)" value="000000">
+                    </div>
+                    
+                    <div id="color6">
+						<button class="jscolor {valueElement:'chosen-value6', onFineChange:'setTextColor(this)'}">
+							Color 6
+						</button>
+						
+						HEX value: <input id="chosen-value6" onchange="color(this.value)" value="000000">
+                    </div>
+                    
+                    <div id="color7">
+						<button class="jscolor {valueElement:'chosen-value7', onFineChange:'setTextColor(this)'}">
+							Color 7
+						</button>
+						
+						HEX value: <input id="chosen-value7" onchange="color(this.value)" value="000000">
+                    </div>
                     </br></br></br>
                 </div>
                 <div align="center">
@@ -94,6 +146,8 @@
 </div>
 
 <div style="height: 50px"></div>
-<script type="text/javascript" src="./js/guildtag.js"></script>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/fader.js"></script>
+	<script type="text/javascript" src="./js/guildtag.js"></script>
 </body>
 </html>
