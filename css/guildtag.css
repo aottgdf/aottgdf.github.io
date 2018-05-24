@@ -80,12 +80,20 @@ name {
 g1,g2 {
     background-color: #066a5f;
 }
-input[type=color] {
-    height: 25px;
-    margin-right: 5px;
-    background-color: #ddd;
-    border: 0.5px solid #ddd;
-    float: left;
+#color button,#color2 button,#color3 button,#color4 button,#color5 button,#color6 button,#color7 button{
+    width: 65px;
+    height: 35px;
+    margin-top: 15px;
+    background-color: white;
+    border: 1.5px solid black;
+}
+#color input,#color2 input,#color3 input,#color4 input,#color5 input,#color6 input,#color7 input{
+    text-align: center;
+    width: 85px;
+    height: 35px;
+    margin-top: 15px;
+    background-color: white;
+    border: 1.5px solid black;
 }
 textarea[type=text] {
     background-color: #ddd;
@@ -103,7 +111,7 @@ textarea[type=text] {
     border-radius: 5px;
     transition: 0.3s;
 }
-#color2,#color3 {
+#color2,#color3,#color4,#color5,#color6,#color7 {
     display: none;
 }
 #isinput {
@@ -147,13 +155,18 @@ textarea[type=text] {
 }
 .menu {
     position: relative;
-    text-align: left;
+    text-align: center;
     width: 100%;
     height: 120px;
 }
-ul.menu {
+.menu ul{
     padding: 0;
     margin: 0;
+    -webkit-margin-before: 0em !important;
+    -webkit-margin-after: 0em!important;
+    -webkit-margin-start: 0px!important;
+    -webkit-margin-end: 0px!important;
+    -webkit-padding-start: 0px!important;
 }
 .menu li{
 	display:inline-block;
