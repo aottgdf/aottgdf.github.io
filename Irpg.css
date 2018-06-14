@@ -1,0 +1,28 @@
+@media screen and (min-width: 700px){
+	#content > div > center > table > tbody > tr > td:nth-child(1) {
+		float: left;
+		position: relative;
+		overflow: auto;
+		width: 100%;
+		zoom: 3;
+	}
+	#content > div > center > table > tbody > tr > td:nth-child(2){
+		float: right;
+		position: relative;
+		overflow: auto;
+		width: 100%;
+		zoom: 3;
+	}
+	ul.marquee {
+		zoom: 2;
+	}
+	#shoutbox {
+		zoom: 2.5;
+	}
+	.tborder thead {
+		zoom: 3;
+	}
+	#cat_1_e,#cat_4_e,#cat_29_e,#cat_38_e,#cat_47_e,#cat_41_e,#cat_23_e,#cat_15_e,#cat_16_e,#boardstats_e {
+		zoom: 2.4;
+	}
+}
