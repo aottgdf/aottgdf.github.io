@@ -1,0 +1,8 @@
+
+javascript: javascript:(function(){
+var irpg = document.createElement('link');
+irpg.type = 'text/css';
+irpg.rel = 'stylesheet';
+irpg.href = 'https://aottgdf.github.io/IrpgMobile.css';
+document.head.appendChild(irpg);
+})();
