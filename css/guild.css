@@ -175,7 +175,14 @@ ul.social-icons {
     font-size: 14px;
 }
 
-#editprofile {
+.mskin,.fskin,.gskin, #maps div, #logic div{
+    background: white;
+    width: 200px;
+    height: 185px;
+}
+
+
+#editprofile,#skin,#maps,#logic {
   font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
   font-weight:100; 
   */
@@ -183,7 +190,7 @@ ul.social-icons {
   color: white;
   width: 40%;
 }
-#editprofile button { 
+#editprofile button,#skin button,#maps button, #logic button { 
   display: block;
   width: 80%;
   padding: .4rem;
@@ -196,8 +203,11 @@ ul.social-icons {
   cursor: pointer;
   transition: .3s background;
 }
-#editprofile button:hover { 
+#editprofile button:hover,#skin button:hover, #maps button:hover , #logic button:hover { 
    background: rgba(0,0,0,0.5);
+}
+#skin,#maps,#logic {
+    width: 90%;
 }
 #polina {
   font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;

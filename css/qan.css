@@ -1,18 +1,9 @@
-@font-face {
-  font-family: 'db_ozone_xmedium';
-  src: url('../fonts/dbozonex-medium.eot');
-  src: url('../fonts/dbozonex-medium.eot?#iefix') format('embedded-opentype'), url('../fonts/dbozonex-medium.woff') format('woff'), url('../fonts/dbozonex-medium.ttf') format('truetype'), url('../fonts/dbozonex-medium.svg#db_ozone_xmedium') format('svg');
-  font-weight: normal;
-}
 * {
     box-sizing: border-box;
 }
 body {
     background-color: #000;
     color: white;
-    font-family: db_ozone_xmedium, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: 100%;
     scroll-behavior: smooth;
 }
 .container {
