@@ -179,4 +179,46 @@ for(var i = 0; i < linkModM.length; i++) {
   }
   
   
+  var linkSkinM = document.querySelectorAll("[id='mskin']");
+  
+  for(var i = 0; i < linkSkinM.length; i++) {
+  linkSkinM[i].onclick = function (){
+  frame.style.display = "block";
+  myFrame.src = "mskin.html";
+  namei.innerHTML = "Male Skins";
+  frame.style.backgroundColor = "#333333";
+  themecolor.setAttribute('content','#333333');
+  mscolor.setAttribute('content','#333333');
+  setOverflow(true);
+  }
+  }
+  
+  var linkSkinF = document.querySelectorAll("[id='fskin']");
+  
+  for(var i = 0; i < linkSkinF.length; i++) {
+  linkSkinF[i].onclick = function (){
+  frame.style.display = "block";
+  myFrame.src = "fskin.html";
+  namei.innerHTML = "Female Skins";
+  frame.style.backgroundColor = "#333333";
+  themecolor.setAttribute('content','#333333');
+  mscolor.setAttribute('content','#333333');
+  setOverflow(true);
+  }
+  }
+  
+  var linkSkinG = document.querySelectorAll("[id='gskin']");
+  
+  for(var i = 0; i < linkSkinG.length; i++) {
+  linkSkinG[i].onclick = function (){
+  frame.style.display = "block";
+  myFrame.src = "gskin.html";
+  namei.innerHTML = "Guild Skins";
+  frame.style.backgroundColor = "#333333";
+  themecolor.setAttribute('content','#333333');
+  mscolor.setAttribute('content','#333333');
+  setOverflow(true);
+  }
+  }
+  
   
